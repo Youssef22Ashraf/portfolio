@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Youssef Ashraf ElNaggar - DevOps & Cloud Infrastructure Engineer. Expert in AWS, Kubernetes, Docker, Terraform, Jenkins, and Prometheus." />
+  <meta name="keywords" content="DevOps Engineer, Cloud Infrastructure, Kubernetes, Docker, AWS, Terraform, CI/CD, Youssef ElNaggar, Egypt DevOps" />
+  <meta name="author" content="Youssef Ashraf ElNaggar" />
+  <meta property="og:title" content="Youssef Ashraf ElNaggar | DevOps & Cloud Infrastructure Engineer" />
+  <meta property="og:description" content="High-impact DevOps Engineer specializing in scalable cloud infrastructure, Kubernetes orchestration, automated CI/CD pipelines, and observability." />
+  <meta property="og:type" content="website" />
+  <title>Youssef Ashraf ElNaggar | DevOps & Cloud Infrastructure Engineer</title>
+  
+  <!-- Google Fonts: Space Grotesk, Inter, Cairo & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css?v=2.2" />
+</head>
+<body>
+  <!-- Canvas Background for dynamic cloud network particles -->
+  <canvas id="cloud-network-canvas" class="network-bg" aria-hidden="true"></canvas>
+
+  <!-- Sticky Cyber Glass Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <span class="logo-box">YN</span>
+        <span class="logo-text" id="brand-name" data-i18n="brand-name">Youssef Ashraf El-Naggar</span>
+        <span class="status-indicator" title="Available for Opportunities"></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link" data-i18n="nav-about"><span class="nav-num">01</span>About</a>
+        <a href="#projects" class="nav-link" data-i18n="nav-projects"><span class="nav-num">02</span>Projects</a>
+        <a href="#experience" class="nav-link" data-i18n="nav-experience"><span class="nav-num">03</span>Experience</a>
+        <a href="#skills" class="nav-link" data-i18n="nav-skills"><span class="nav-num">04</span>Tech Stack</a>
+        <a href="#certificates" class="nav-link" data-i18n="nav-certificates"><span class="nav-num">05</span>Certifications</a>
+        <a href="#recommendations" class="nav-link" data-i18n="nav-recommendations"><span class="nav-num">06</span>Endorsements</a>
+        <a href="#terminal-section" class="nav-link terminal-nav-btn" data-i18n="nav-cli">
+          <span class="cmd-icon">&gt;_</span> CLI
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <!-- Language Switcher Button -->
+        <button id="nav-lang-toggle" class="lang-toggle-btn" aria-label="Toggle language (العربية / English)" title="تبديل اللغة / Switch Language">
+          <span id="lang-switch-text">عربي</span>
+        </button>
+
+        <a href="https://github.com/Youssef22Ashraf" target="_blank" rel="noopener noreferrer" class="nav-gh-btn" id="nav-github-link">
+          GitHub <span>↗</span>
+        </a>
+
+        <a href="#contact" class="nav-btn primary" data-i18n="nav-hire">Hire Me</a>
+
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <a href="#about" class="mobile-link">01 About</a>
+      <a href="#projects" class="mobile-link">02 Projects</a>
+      <a href="#experience" class="mobile-link">03 Experience</a>
+      <a href="#skills" class="mobile-link">04 Tech Stack</a>
+      <a href="#certificates" class="mobile-link">05 Certifications</a>
+      <a href="#recommendations" class="mobile-link">06 Endorsements</a>
+      <a href="#terminal-section" class="mobile-link">&gt;_ DevOps CLI</a>
+      <a href="#contact" class="mobile-link btn-highlight">Get in Touch ➔</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="badge-wrapper">
+            <span class="pulse-badge" data-i18n="hero-pulse">
+              <span class="pulse-dot"></span>
+              Open to Work &bull; DevOps &bull; Cairo, Egypt
+            </span>
+            <span class="gpa-badge" data-i18n="hero-gpa">Highest Honors (GPA 3.95/4.00)</span>
+            <button id="hero-lang-badge" class="lang-badge clickable" aria-label="Switch Language (العربية / English)" title="اضغط لتبديل اللغة / Click to switch language"><span id="hero-lang-badge-text">AR / EN ⇄</span></button>
+          </div>
+
+          <h1 class="hero-title" data-i18n="hero-title">
+            Scaling Resilient Cloud Infrastructure with <span class="gradient-text">Zero Downtime</span> &amp; Precision Automation.
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero-subtitle">
+            I’m <strong>Youssef Ashraf ElNaggar</strong> &mdash; a <strong>DevOps &amp; Cloud Infrastructure Engineer</strong> graduated with 
+            Highest Honors from Nile University. Experienced at <strong>Valeo</strong> and <strong>DEPI (MCIT)</strong>, I engineer automated CI/CD pipelines, 
+            orchestrate production Kubernetes clusters, cut container footprints by <strong>97.5%</strong>, and maintain high-uptime cloud operations.
+          </p>
+
+          <!-- Core Call to Actions -->
+          <div class="hero-actions">
+            <a href="https://github.com/Youssef22Ashraf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="hero-github-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              View GitHub ↗
+            </a>
+            <a href="Youssef-Ashraf-Resume.pdf" target="_blank" rel="noopener noreferrer" id="hero-resume-btn" class="btn btn-secondary" title="View Official Resume PDF in Browser">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span data-i18n="hero-btn-resume">View Official Résumé (PDF) ↗</span>
+            </a>
+            <button class="btn btn-ghost" data-modal="modal-resume" title="Preview Resume in Modal">
+              <span data-i18n="hero-btn-preview">Modal Preview</span>
+            </button>
+            <a href="Youssef-Ashraf-Resume.pdf" download="Youssef-Ashraf-Resume.pdf" class="btn btn-ghost" title="Download direct PDF file">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="hero-btn-download">Download PDF</span>
+            </a>
+            <a href="https://wa.me/201026735485?text=Hello%20Youssef,%20I%20saw%20your%20DevOps%20portfolio!" target="_blank" rel="noopener noreferrer" class="btn btn-ghost whatsapp-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              WhatsApp Me
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-target="97.5" data-suffix="%">0%</span>
+              <span class="stat-label" data-i18n="hero-stat-1-label">Image Footprint Slashed (Go/Docker)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="200" data-suffix="+">0</span>
+              <span class="stat-label" data-i18n="hero-stat-2-label">CI Nodes &amp; Machines Orchestrated</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="40" data-suffix="%">0%</span>
+              <span class="stat-label" data-i18n="hero-stat-3-label">Manual Effort Cut with Pipelines</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="3.95" data-decimal="true">0.0</span>
+              <span class="stat-label" data-i18n="hero-stat-4-label">Cumulative GPA (Highest Honors)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Simulated Pipeline Component -->
+        <div class="hero-interactive">
+          <div class="pipeline-widget">
+            <div class="pipeline-header">
+              <div class="pipeline-title">
+                <span class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </span>
+                <span class="mono-text">pipeline://live-cloud-rollout.yaml</span>
+              </div>
+              <span class="pipeline-status-badge">
+                <span class="spin-indicator"></span> HEALTHY
+              </span>
+            </div>
+
+            <div class="pipeline-stages">
+              <div class="pipeline-step completed" id="step-commit">
+                <div class="step-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>
+                </div>
+                <div class="step-info">
+                  <span class="step-name">Git Commit</span>
+                  <span class="step-meta">main @ d28f1a4</span>
+                </div>
+                <span class="step-time">0.4s</span>
+              </div>
+
+              <div class="pipeline-connector active"></div>
+
+              <div class="pipeline-step completed" id="step-build">
+                <div class="step-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                </div>
+                <div class="step-info">
+                  <span class="step-name">Docker Multi-Stage</span>
+                  <span class="step-meta">Alpine (24.5 MB)</span>
+                </div>
+                <span class="step-time">1.8s</span>
+              </div>
+
+              <div class="pipeline-connector active"></div>
+
+              <div class="pipeline-step completed" id="step-iac">
+                <div class="step-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <div class="step-info">
+                  <span class="step-name">Terraform &amp; Ansible</span>
+                  <span class="step-meta">AWS EKS / KubeSeal</span>
+                </div>
+                <span class="step-time">3.2s</span>
+              </div>
+
+              <div class="pipeline-connector active"></div>
+
+              <div class="pipeline-step completed pulse-stage" id="step-deploy">
+                <div class="step-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+                </div>
+                <div class="step-info">
+                  <span class="step-name">Zero-Downtime Rollout</span>
+                  <span class="step-meta">Cloud Run &amp; Kubernetes</span>
+                </div>
+                <span class="step-badge">LIVE</span>
+              </div>
+            </div>
+
+            <div class="pipeline-footer">
+              <span class="pipeline-log-ticker mono-text">
+                <span class="prompt-arrow">&gt;</span> [Prometheus] All pods reporting healthy (p99 latency &lt; 14ms)
+              </span>
+              <button id="retrigger-pipeline-btn" class="mini-btn" title="Simulate Pipeline Trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                Re-run
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECH MARQUEE (Similar to Youssef Salem's dynamic marquee) -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">AWS EKS &bull; EC2</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">KUBERNETES</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">DOCKER MULTI-STAGE (-97.5%)</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">TERRAFORM IaC</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">ANSIBLE AUTOMATION</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JENKINS CI/CD</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">GITHUB ACTIONS</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">GOOGLE CLOUD RUN</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">PROMETHEUS &amp; GRAFANA</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">GOLANG MICROSERVICES</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">PYTHON &amp; BASH</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">ZERO DOWNTIME DEPLOYMENTS</span>
+        <span class="marquee-sep">✦</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="marquee-item">AWS EKS &bull; EC2</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">KUBERNETES</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">DOCKER MULTI-STAGE (-97.5%)</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">TERRAFORM IaC</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">ANSIBLE AUTOMATION</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JENKINS CI/CD</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">GITHUB ACTIONS</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">GOOGLE CLOUD RUN</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">PROMETHEUS &amp; GRAFANA</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">GOLANG MICROSERVICES</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">PYTHON &amp; BASH</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">ZERO DOWNTIME DEPLOYMENTS</span>
+        <span class="marquee-sep">✦</span>
+      </div>
+    </div>
+
+    <!-- 01 ABOUT & BENTO PROFILE -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono-text" data-i18n="about-tag">01 // ENGINEERING PROFILE</span>
+          <h2 class="section-title" data-i18n="about-title">Bridging Development &amp; Cloud Operations</h2>
+          <p class="section-desc" data-i18n="about-desc">With hands-on experience at industry leaders like <strong>Valeo</strong>, government initiatives like <strong>DEPI (MCIT)</strong>, and highest academic honors from Nile University, I turn manual deployments into deterministic, observable, automated cloud platforms.</p>
+        </div>
+
+        <!-- Bento Grid Profile -->
+        <div class="bento-profile-grid">
+          <!-- Profile Quick Details Card -->
+          <div class="bento-card profile-details-card">
+            <div class="profile-header-row">
+              <div class="avatar-badge">
+                <span class="avatar-initials">YN</span>
+                <span class="avatar-status"></span>
+              </div>
+              <div class="profile-meta">
+                <h3 class="profile-name">Youssef Ashraf ElNaggar</h3>
+                <span class="profile-role" data-i18n="bento-role">DevOps &amp; Cloud Infrastructure Engineer</span>
+              </div>
+            </div>
+
+            <div class="profile-info-list">
+              <div class="profile-info-row">
+                <span class="info-label" data-i18n="bento-based-lbl">Based in</span>
+                <span class="info-val" data-i18n="bento-based-val">6th October, Giza / Cairo, Egypt</span>
+              </div>
+              <div class="profile-info-row">
+                <span class="info-label" data-i18n="bento-edu-lbl">Education</span>
+                <span class="info-val" data-i18n="bento-edu-val">Nile University (Class of 2025)</span>
+              </div>
+              <div class="profile-info-row">
+                <span class="info-label" data-i18n="bento-lang-lbl">Languages</span>
+                <span class="info-val" data-i18n="bento-lang-val">Arabic (Native) &bull; English (Fluent)</span>
+              </div>
+              <div class="profile-info-row">
+                <span class="info-label" data-i18n="bento-avail-lbl">Availability</span>
+                <span class="info-val highlight-green" data-i18n="bento-avail-val">Immediate Full-Time Hire</span>
+              </div>
+            </div>
+
+            <div class="profile-social-actions">
+              <a href="https://www.linkedin.com/in/youssef-ashraf-el-naggar/" target="_blank" rel="noopener noreferrer" class="bento-social-btn">
+                LinkedIn Profile ↗
+              </a>
+              <a href="https://github.com/Youssef22Ashraf" target="_blank" rel="noopener noreferrer" class="bento-social-btn">
+                GitHub @Youssef22Ashraf ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- University & Academic Excellence Card -->
+          <div class="bento-card edu-bento-card">
+            <div class="bento-card-header">
+              <span class="badge-mini">Academic Standing</span>
+              <span class="mono-text text-muted">2021 &mdash; 2025</span>
+            </div>
+            <h3 class="bento-card-title" data-i18n="bento-acad-title">Nile University &mdash; Highest Honors</h3>
+            <p class="bento-card-sub">
+              Bachelor of Information Technology and Computer Science. Graduated with <strong>Highest Honors / Excellence</strong>, maintaining a <strong>3.95 / 4.00 Cumulative GPA</strong>.
+            </p>
+            <div class="bento-tags-row">
+              <span class="bento-tag">GPA 3.95 / 4.00</span>
+              <span class="bento-tag">Grad Project: Grade Excellent</span>
+              <span class="bento-tag">Dean's List Awardee</span>
+            </div>
+
+            <!-- Mini Metric Counters inside Bento -->
+            <div class="bento-stats-row">
+              <div class="bento-stat">
+                <span class="stat-number">4+</span>
+                <span class="stat-desc">Production Projects</span>
+              </div>
+              <div class="bento-stat">
+                <span class="stat-number">200+</span>
+                <span class="stat-desc">Machines Managed</span>
+              </div>
+              <div class="bento-stat">
+                <span class="stat-number">-97.5%</span>
+                <span class="stat-desc">Container Footprint</span>
+              </div>
+              <div class="bento-stat">
+                <span class="stat-number">0</span>
+                <span class="stat-desc">Downtime Deployments</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Core Pillars Grid -->
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <h3 data-i18n="pillar-1-title">Cloud &amp; Kubernetes Architecture</h3>
+            <p>
+              Architecting production-ready microservices across <strong>AWS (EC2, EKS, S3, IAM)</strong> and <strong>Google Cloud Platform (Cloud Run)</strong> with declarative infrastructure via <strong>Terraform</strong> and sealed Kubernetes secrets.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 data-i18n="pillar-2-title">CI/CD &amp; Infrastructure as Code</h3>
+            <p>
+              Engineering automated delivery pipelines with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>. Standardizing configurations across 200+ machines with <strong>Ansible</strong> playbooks, reducing human error and configuration drift.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><activity width="24" height="24"></activity><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h3 data-i18n="pillar-3-title">Observability &amp; SRE Mindset</h3>
+            <p>
+              Implementing proactive monitoring, alerts, and APM using <strong>Prometheus, Grafana, Sentry, and the ELK Stack</strong>. Enforcing strict SLIs/SLOs to detect anomalies before users ever notice.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 data-i18n="pillar-4-title">Systems Programming &amp; Optimization</h3>
+            <p>
+              Proficient in <strong>Go (Golang), Python, Bash, and TypeScript</strong>. Master of ultra-slim multi-stage Docker builds, having reduced production images by <strong>97.5%</strong> for low-latency cold starts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 FLAGSHIP PROJECTS WITH ARCHITECTURE MODALS -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono-text" data-i18n="proj-tag">02 // PRODUCTION CASE STUDIES</span>
+          <h2 class="section-title" data-i18n="proj-title">Architected &amp; Deployed Projects</h2>
+          <p class="section-desc" data-i18n="proj-desc">Deep dive into scalable cloud architectures, container optimizations, and zero-downtime microservices.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+            <div class="project-badge-bar">
+              <span class="proj-badge client-badge" data-i18n="proj-1-badge">Client: Mofarreh Group</span>
+              <span class="proj-date mono-text">09/2026</span>
+            </div>
+            <h3 class="project-title" data-i18n="proj-1-title">Workplace Assessment &amp; Live Proctoring Platform</h3>
+            <p class="project-summary" data-i18n="proj-1-summary">Architected and deployed a mission-critical assessment platform featuring real-time Socket.IO supervisor auditing, server-side exam scoring, and anti-cheat tab-blur monitoring.</p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-1-h1">Webcam proctoring via MediaRecorder &amp; IndexedDB chunk buffering</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-1-h2">Containerized React 19 &amp; Express with multi-stage Alpine Docker</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-1-h3">Deployed to Railway production with Sentry APM error diagnostics</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tech-pill">Docker (Alpine)</span>
+              <span class="tech-pill">Socket.IO</span>
+              <span class="tech-pill">React 19</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">Sentry APM</span>
+              <span class="tech-pill">Railway</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-card-action" data-modal="modal-proctoring" data-i18n="proj-blueprint-btn">Architecture Blueprint &rarr;</button>
+              <a href="https://github.com/Youssef22Ashraf/exam-sys" target="_blank" rel="noopener noreferrer" class="card-gh-link" title="GitHub Repository">
+                exam-sys ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card featured">
+            <div class="project-badge-bar">
+              <span class="proj-badge grad-badge" data-i18n="proj-2-badge">Nile Univ Graduation Project</span>
+              <span class="proj-date mono-text">10/2024 &ndash; 06/2025</span>
+            </div>
+            <h3 class="project-title" data-i18n="proj-2-title">AI-driven Energy Optimization Framework</h3>
+            <p class="project-summary" data-i18n="proj-2-summary">Built and containerized the scalable Python backend handling IDF architectural design files, 2D/3D visualizations, and RAG/LLM pipelines. Automated full CI/CD to Google Cloud Run.</p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-2-h1">Automated end-to-end CI/CD via GitHub Actions</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-2-h2">Zero-downtime serverless container rollouts on Google Cloud Run</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-2-h3">Secure ingress critical for live RAG/LLM platform operations</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tech-pill">Google Cloud Run</span>
+              <span class="tech-pill">GitHub Actions</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">RAG / LLM</span>
+              <span class="tech-pill">FastAPI</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-card-action" data-modal="modal-energy" data-i18n="proj-blueprint-btn">Architecture Blueprint &rarr;</button>
+              <a href="https://github.com/MohamedAbdelfattah022/EnergyPlus-API" target="_blank" rel="noopener noreferrer" class="card-gh-link" title="GitHub Repository">
+                EnergyPlus-API ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <div class="project-badge-bar">
+              <span class="proj-badge depi-badge" data-i18n="proj-3-badge">DEPI Graduation Project</span>
+              <span class="proj-date mono-text">03/2025 &ndash; 05/2025</span>
+            </div>
+            <h3 class="project-title" data-i18n="proj-3-title">Hybrid Multi-Tier &amp; Microservices Deployment</h3>
+            <p class="project-summary" data-i18n="proj-3-summary">End-to-end cloud infrastructure for a distributed bookstore microservices application. Provisioned with Terraform on AWS EKS and automated via Jenkins on EC2.</p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-3-h1">Infrastructure as Code on AWS using modular Terraform scripts</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-3-h2">Configured Jenkins CI/CD on EC2 via automated Ansible playbooks</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-3-h3">Hardened secrets with KubeSeal; Prometheus &amp; Grafana observability</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tech-pill">AWS EKS</span>
+              <span class="tech-pill">Terraform</span>
+              <span class="tech-pill">Ansible</span>
+              <span class="tech-pill">Jenkins</span>
+              <span class="tech-pill">KubeSeal</span>
+              <span class="tech-pill">Prometheus/Grafana</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-card-action" data-modal="modal-bookstore" data-i18n="proj-blueprint-btn">Architecture Blueprint &rarr;</button>
+              <a href="https://github.com/Youssef22Ashraf/DEPI_Graduation-Project" target="_blank" rel="noopener noreferrer" class="card-gh-link" title="GitHub Repository">
+                DEPI_Graduation-Project ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project-card">
+            <div class="project-badge-bar">
+              <span class="proj-badge depi-badge" data-i18n="proj-4-badge">DEPI Program</span>
+              <span class="proj-date mono-text">02/2025</span>
+            </div>
+            <h3 class="project-title" data-i18n="proj-4-title">High-Performance Go Microservice with Redis &amp; K8s</h3>
+            <p class="project-summary" data-i18n="proj-4-summary">Engineered an ultra-lean caching microservice in Go. Slashed container footprint by 97.5% through multi-stage compilation and deployed resilient StatefulSets on Kubernetes.</p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-4-h1">Reduced image size by <strong>97.5%</strong> (1 GB &rarr; 24.5 MB)</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-4-h2">Configured StatefulSets, PVCs, ConfigMaps, and NodePort services</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span data-i18n="proj-4-h3">Low-latency persistent caching layer under simulated heavy traffic</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tech-pill">Go (Golang)</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">Kubernetes StatefulSets</span>
+              <span class="tech-pill">Persistent Volumes</span>
+              <span class="tech-pill">Docker</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-card-action" data-modal="modal-go-redis" data-i18n="proj-blueprint-btn">Architecture Blueprint &rarr;</button>
+              <a href="https://github.com/Youssef22Ashraf/DevOps_Challenge_Depi" target="_blank" rel="noopener noreferrer" class="card-gh-link" title="GitHub Repository">
+                DevOps_Challenge_Depi ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Open Source Labs & Technical Explorations Sub-Grid -->
+        <div class="labs-showcase">
+          <div class="labs-header">
+            <div>
+              <span class="labs-badge mono-text" data-i18n="labs-tag">// CONTINUOUS PRACTICE &amp; REPOSITORIES</span>
+              <h3 class="labs-title" data-i18n="labs-title">Open Source DevOps Labs &amp; Technical Explorations</h3>
+            </div>
+            <a href="https://github.com/Youssef22Ashraf?tab=repositories" target="_blank" rel="noopener noreferrer" class="view-all-gh-btn" data-i18n="labs-gh-link">View All Repositories on GitHub <span>↗</span></a>
+          </div>
+
+          <div class="labs-grid">
+            <div class="lab-card">
+              <div class="lab-card-top">
+                <span class="lab-tag mono-text" data-i18n="lab-1-tag">Docker &bull; Containerization</span>
+                <a href="https://github.com/Youssef22Ashraf/docker_depi_labs" target="_blank" rel="noopener noreferrer" class="lab-link">docker_depi_labs ↗</a>
+              </div>
+              <h4 data-i18n="lab-1-title">Docker Multi-Stage &amp; Networking Labs</h4>
+              <p data-i18n="lab-1-desc">Comprehensive repository of containerization practical drills: custom multi-stage Dockerfiles, volume persistence, bridge/host networking, and Docker Compose orchestration.</p>
+              <div class="lab-tech-row">
+                <span>Docker</span>
+                <span>Docker Compose</span>
+                <span>Alpine Linux</span>
+              </div>
+            </div>
+
+            <div class="lab-card">
+              <div class="lab-card-top">
+                <span class="lab-tag mono-text" data-i18n="lab-2-tag">Kubernetes &bull; Orchestration</span>
+                <a href="https://github.com/Youssef22Ashraf/k8s_depi_program" target="_blank" rel="noopener noreferrer" class="lab-link">k8s_depi_program ↗</a>
+              </div>
+              <h4 data-i18n="lab-2-title">Kubernetes Manifests &amp; Cluster Architecture</h4>
+              <p data-i18n="lab-2-desc">Production-patterned K8s manifests covering Deployments, StatefulSets, PersistentVolumeClaims, Ingress routing, ConfigMaps, Secrets, and RBAC security models.</p>
+              <div class="lab-tech-row">
+                <span>Kubernetes</span>
+                <span>StatefulSets</span>
+                <span>Ingress</span>
+              </div>
+            </div>
+
+            <div class="lab-card">
+              <div class="lab-card-top">
+                <span class="lab-tag mono-text" data-i18n="lab-3-tag">Scripting &bull; Process Automation</span>
+                <span class="lab-badge-internal" data-i18n="lab-3-badge">Valeo Automation</span>
+              </div>
+              <h4 data-i18n="lab-3-title">Enterprise Automation &amp; Metrics Dashboard</h4>
+              <p data-i18n="lab-3-desc">Automated internal reporting, analytical gauge models, and task health tracking scripts saving team leads 4+ hours per week on manual project monitoring.</p>
+              <div class="lab-tech-row">
+                <span>JavaScript</span>
+                <span>Google Apps Script</span>
+                <span>Data Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 03 WORK EXPERIENCE TIMELINE -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono-text" data-i18n="exp-tag">03 // CAREER MILESTONES</span>
+          <h2 class="section-title" data-i18n="exp-title">Professional Work Experience</h2>
+          <p class="section-desc" data-i18n="exp-desc">Delivering measurable automation, high availability, and stability in fast-paced engineering teams.</p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-role" data-i18n="exp-1-role">DevOps Engineer Intern</h3>
+                  <h4 class="exp-company" data-i18n="exp-1-comp">Valeo &bull; Cairo, Egypt</h4>
+                </div>
+                <span class="exp-badge">07/2024 &ndash; 09/2024</span>
+              </div>
+              <ul class="exp-bullets">
+                <li data-i18n="exp-1-b1">Automated multi-OS Docker image builds and CI workflows using <strong>Bash, Python, and Jenkins</strong>, slashing manual engineer intervention by <strong>40%</strong>.</li>
+                <li data-i18n="exp-1-b2">Maintained persistent, secure SSH connectivity across <strong>200+ machines</strong>, eliminating deployment dropouts and system accessibility bottlenecks.</li>
+                <li data-i18n="exp-1-b3">Automated Git version upgrades across CI nodes and synchronized artifact management in <strong>Nexus</strong> via <strong>Ansible playbooks</strong>, decreasing repository sync errors by <strong>80%</strong>.</li>
+                <li data-i18n="exp-1-b4">Standardized CI environment roles and variable auditing using Ansible, boosting debugging and triage efficiency by <strong>50%</strong>.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="exp-tag">Jenkins</span>
+                <span class="exp-tag">Ansible</span>
+                <span class="exp-tag">Docker</span>
+                <span class="exp-tag">Bash &amp; Python</span>
+                <span class="exp-tag">Nexus</span>
+                <span class="exp-tag">SSH Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-role" data-i18n="exp-2-role">DevOps Engineer Intern</h3>
+                  <h4 class="exp-company" data-i18n="exp-2-comp">STEM Entrepreneurship Center &bull; Cairo, Egypt</h4>
+                </div>
+                <span class="exp-badge">03/2025 &ndash; 05/2025</span>
+              </div>
+              <ul class="exp-bullets">
+                <li data-i18n="exp-2-b1">Containerized multi-service applications using <strong>Docker</strong> and automated continuous deployment pipelines with <strong>Jenkins</strong>.</li>
+                <li data-i18n="exp-2-b2">Conducted practical workshops and technical mentorship on container best practices, Git branching strategies, and CI/CD pipelines for emerging engineers.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="exp-tag">Docker</span>
+                <span class="exp-tag">Jenkins</span>
+                <span class="exp-tag">CI/CD Best Practices</span>
+                <span class="exp-tag">Git Strategy</span>
+                <span class="exp-tag">Technical Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-role" data-i18n="exp-3-role">Software &amp; Process Automation Intern</h3>
+                  <h4 class="exp-company" data-i18n="exp-3-comp">Valeo &bull; Cairo, Egypt</h4>
+                </div>
+                <span class="exp-badge">08/2023 &ndash; 09/2023</span>
+              </div>
+              <ul class="exp-bullets">
+                <li data-i18n="exp-3-b1">Automated internal project management reports and analytics dashboards using <strong>JavaScript / Google Apps Script</strong>, reducing manual reporting overhead by <strong>60%</strong>.</li>
+                <li data-i18n="exp-3-b2">Built visual analytical tracking models (gauge &amp; pie charts), saving team leads <strong>4+ hours per week</strong> on manual calculations and status compiling.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="exp-tag">Process Automation</span>
+                <span class="exp-tag">JavaScript</span>
+                <span class="exp-tag">Analytics Dashboards</span>
+                <span class="exp-tag">Workflow Optimization</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 TECH STACK MATRIX -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono-text" data-i18n="skills-tag">04 // TECHNICAL ARSENAL</span>
+          <h2 class="section-title" data-i18n="skills-title">Technical Skills &amp; Cloud Arsenal</h2>
+          <p class="section-desc" data-i18n="skills-desc">Technologies and tools I implement in production environments every day.</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All Tools</button>
+          <button class="filter-btn" data-filter="cloud" data-i18n="filter-cloud">Cloud &amp; Orchestration</button>
+          <button class="filter-btn" data-filter="cicd" data-i18n="filter-cicd">CI/CD &amp; Automation</button>
+          <button class="filter-btn" data-filter="monitoring" data-i18n="filter-obs">Observability</button>
+          <button class="filter-btn" data-filter="scripting" data-i18n="filter-scripting">Scripting &amp; Data</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Cloud & Containers -->
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-1-tag">Container</span>
+              <span class="skill-exp" data-i18n="skill-1-exp">Production</span>
+            </div>
+            <div class="skill-name">Docker &amp; Docker Compose</div>
+            <p class="skill-desc" data-i18n="skill-1-desc">Multi-stage alpine builds, volume persistence, network isolation, 97.5% size cuts.</p>
+          </div>
+
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-2-tag">Orchestration</span>
+              <span class="skill-exp" data-i18n="skill-2-exp">Advanced</span>
+            </div>
+            <div class="skill-name">Kubernetes (K8s &amp; EKS)</div>
+            <p class="skill-desc" data-i18n="skill-2-desc">Deployments, StatefulSets, PVCs, ConfigMaps, Ingress, NodePort, KubeSeal secrets.</p>
+          </div>
+
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-3-tag">Cloud Provider</span>
+              <span class="skill-exp" data-i18n="skill-3-exp">Production</span>
+            </div>
+            <div class="skill-name">Amazon Web Services (AWS)</div>
+            <p class="skill-desc" data-i18n="skill-3-desc">EKS, EC2 instances, S3 storage buckets, IAM least-privilege security policies.</p>
+          </div>
+
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-4-tag">Serverless Cloud</span>
+              <span class="skill-exp" data-i18n="skill-4-exp">Production</span>
+            </div>
+            <div class="skill-name">Google Cloud Platform (GCP)</div>
+            <p class="skill-desc" data-i18n="skill-4-desc">Google Cloud Run zero-downtime microservice deployments, secure ingress, auto-scaling.</p>
+          </div>
+
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-5-tag">IaC</span>
+              <span class="skill-exp" data-i18n="skill-5-exp">Production</span>
+            </div>
+            <div class="skill-name">Terraform (HCL)</div>
+            <p class="skill-desc" data-i18n="skill-5-desc">Declarative infrastructure provisioning, repeatable cloud states, state locking.</p>
+          </div>
+
+          <!-- CI/CD & Automation -->
+          <div class="skill-card" data-category="cicd">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-6-tag">Configuration</span>
+              <span class="skill-exp" data-i18n="skill-6-exp">Valeo Proven</span>
+            </div>
+            <div class="skill-name">Ansible Automation</div>
+            <p class="skill-desc" data-i18n="skill-6-desc">Managed 200+ host nodes, playbook orchestration, automated Git/Nexus upgrades.</p>
+          </div>
+
+          <div class="skill-card" data-category="cicd">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-7-tag">Pipeline</span>
+              <span class="skill-exp" data-i18n="skill-7-exp">Advanced</span>
+            </div>
+            <div class="skill-name">Jenkins CI/CD</div>
+            <p class="skill-desc" data-i18n="skill-7-desc">Declarative pipelines, automated multi-OS builds, distributed agent architecture.</p>
+          </div>
+
+          <div class="skill-card" data-category="cicd">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-8-tag">Modern CI/CD</span>
+              <span class="skill-exp" data-i18n="skill-8-exp">Production</span>
+            </div>
+            <div class="skill-name">GitHub Actions</div>
+            <p class="skill-desc" data-i18n="skill-8-desc">Automated build, test, and container push workflows directly connected to GCP/AWS.</p>
+          </div>
+
+          <div class="skill-card" data-category="cicd">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-9-tag">OS &amp; SysAdmin</span>
+              <span class="skill-exp" data-i18n="skill-9-exp">Deep Knowledge</span>
+            </div>
+            <div class="skill-name">Linux Administration</div>
+            <p class="skill-desc" data-i18n="skill-9-desc">Ubuntu / Alpine / Debian, persistent SSH tunnels, systemd, permission auditing.</p>
+          </div>
+
+          <!-- Monitoring & Observability -->
+          <div class="skill-card" data-category="monitoring">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-10-tag">Metrics</span>
+              <span class="skill-exp" data-i18n="skill-10-exp">Production</span>
+            </div>
+            <div class="skill-name">Prometheus</div>
+            <p class="skill-desc" data-i18n="skill-10-desc">Service discovery, custom scrapers, PromQL alerting rules, metric collection.</p>
+          </div>
+
+          <div class="skill-card" data-category="monitoring">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-11-tag">Dashboards</span>
+              <span class="skill-exp" data-i18n="skill-11-exp">Production</span>
+            </div>
+            <div class="skill-name">Grafana</div>
+            <p class="skill-desc" data-i18n="skill-11-desc">Real-time health visualization, cluster telemetry, SLA/SLO tracking, alert channels.</p>
+          </div>
+
+          <div class="skill-card" data-category="monitoring">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-12-tag">APM &amp; Logs</span>
+              <span class="skill-exp" data-i18n="skill-12-exp">Production</span>
+            </div>
+            <div class="skill-name">Sentry APM &amp; ELK</div>
+            <p class="skill-desc" data-i18n="skill-12-desc">Real-time crash diagnostics, distributed tracing, centralized log management.</p>
+          </div>
+
+          <!-- Scripting & Dev -->
+          <div class="skill-card" data-category="scripting">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-13-tag">Language</span>
+              <span class="skill-exp" data-i18n="skill-13-exp">Systems</span>
+            </div>
+            <div class="skill-name">Go (Golang)</div>
+            <p class="skill-desc" data-i18n="skill-13-desc">High-concurrency microservices, lightweight binary compilation, Redis integration.</p>
+          </div>
+
+          <div class="skill-card" data-category="scripting">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-14-tag">Scripting &amp; AI</span>
+              <span class="skill-exp" data-i18n="skill-14-exp">Advanced</span>
+            </div>
+            <div class="skill-name">Python &amp; Bash</div>
+            <p class="skill-desc" data-i18n="skill-14-desc">Automation CLI scripts, RAG/LLM backends, OS cron jobs, data pipelines.</p>
+          </div>
+
+          <div class="skill-card" data-category="scripting">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-15-tag">Caching &amp; DB</span>
+              <span class="skill-exp" data-i18n="skill-15-exp">Production</span>
+            </div>
+            <div class="skill-name">Redis &amp; PostgreSQL</div>
+            <p class="skill-desc" data-i18n="skill-15-desc">In-memory caching with StatefulSets &amp; PVCs, relational schemas, Prisma ORM.</p>
+          </div>
+
+          <div class="skill-card" data-category="scripting">
+            <div class="skill-header">
+              <span class="skill-tag" data-i18n="skill-16-tag">Full-Stack Interop</span>
+              <span class="skill-exp" data-i18n="skill-16-exp">Proficient</span>
+            </div>
+            <div class="skill-name">TypeScript / Node.js</div>
+            <p class="skill-desc" data-i18n="skill-16-desc">Socket.IO real-time supervisors, Express REST APIs, modern web interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 ACCOMPLISHMENTS & CERTIFICATIONS -->
+    <section id="certificates" class="certificates-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono-text" data-i18n="certs-tag">05 // CREDENTIALS &amp; RECOGNITION</span>
+          <h2 class="section-title" data-i18n="certs-title">Certifications &amp; Honors</h2>
+          <p class="section-desc" data-i18n="certs-desc">Recognized for technical competence, government training programs, and academic excellence.</p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1: Valeo -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <span class="cert-org" data-i18n="cert-valeo-org">Valeo &bull; GISACC Department</span>
+            <h3 class="cert-name" data-i18n="cert-valeo-title">DevOps Engineer Internship Certificate</h3>
+            <p class="cert-desc" data-i18n="cert-valeo-desc">Awarded for successfully executing CI/CD automation, Ansible standardization across 200+ machines, and Docker containerization during Summer 2024.</p>
+            <span class="cert-date mono-text">10/2024</span>
+          </div>
+
+          <!-- Cert 2: DEPI -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <span class="cert-org" data-i18n="cert-depi-org">Egyptian Ministry of Communications &amp; IT</span>
+            <h3 class="cert-name" data-i18n="cert-depi-title">DEPI DevOps Engineering Diploma</h3>
+            <p class="cert-desc" data-i18n="cert-depi-desc">Intensive practical training program in AWS, Kubernetes, Terraform IaC, Jenkins, Ansible, and Prometheus/Grafana monitoring.</p>
+            <span class="cert-date mono-text">10/2024 &ndash; 05/2025</span>
+          </div>
+
+          <!-- Cert 3: KodeKloud -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            </div>
+            <span class="cert-org" data-i18n="cert-kk-org">KodeKloud</span>
+            <h3 class="cert-name" data-i18n="cert-kk-title">Fundamentals of DevOps</h3>
+            <p class="cert-desc" data-i18n="cert-kk-desc">Mastery of DevOps culture, continuous delivery pipelines, LEAN infrastructure practices, and cloud automation metrics.</p>
+            <span class="cert-date mono-text">02/2025</span>
+          </div>
+
+          <!-- Cert 4: Dean's List -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <span class="cert-org" data-i18n="cert-dean-org">Nile University &bull; Dean's Honor</span>
+            <h3 class="cert-name" data-i18n="cert-dean-title">Dean's List Academic Excellence Certificate</h3>
+            <p class="cert-desc" data-i18n="cert-dean-desc">Awarded by Dr. Ahmed El-Mahdy, Dean of the School of Information Technology and Computer Science, for top semester academic distinction.</p>
+            <span class="cert-date mono-text">Spring 2024</span>
+          </div>
+
+          <!-- Cert 5: Photography Winner -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </div>
+            <span class="cert-org" data-i18n="cert-photo-org">Nile University &bull; Dean School of Business</span>
+            <h3 class="cert-name" data-i18n="cert-photo-title">1st Place Winner &mdash; Photography Competition</h3>
+            <p class="cert-desc" data-i18n="cert-photo-desc">Special award from Dr. Hassan Aly recognizing creative eye, precision, and visual composition excellence.</p>
+            <span class="cert-date mono-text">08/2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 INTERACTIVE DEVOPS TERMINAL (RECRUITER DELIGHT) -->
+    
+    <!-- 06 RECOMMENDATIONS & ENDORSEMENTS -->
+    <section id="recommendations" class="recommendations-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono-text" data-i18n="recs-tag">06 // PROFESSIONAL ENDORSEMENTS</span>
+          <h2 class="section-title" data-i18n="recs-title">Recommendations from Leaders &amp; Engineers</h2>
+          <p class="section-desc" data-i18n="recs-desc">
+            Direct feedback from managers, startup co-founders, university faculty, and senior engineering colleagues on LinkedIn.
+          </p>
+        </div>
+
+        <div class="recs-grid">
+          
+          <!-- Rec 1: Mohamed Hussein Ramadan (Direct Manager) -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">MR</div>
+                <div class="rec-info">
+                  <h4>Mohamed Hussein Ramadan</h4>
+                  <p class="rec-role">Head of Software Product Ecosystems &amp; DevOps</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">Management</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-1-quote">
+              Professionalism, good programmer, hard worker.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-1-rel">Managed Youssef directly</span>
+              <a href="https://www.linkedin.com/in/mohamed-hussein-ramadan-03bb417b/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Rec 2: Yassin Saad, MSc -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">YS</div>
+                <div class="rec-info">
+                  <h4>Yassin Saad, MSc</h4>
+                  <p class="rec-role">Co-founder &amp; Head of Engineering @ Vionex | Leading Cloud Infrastructure</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">Cloud Founder</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-2-quote">
+              Throughout our time together at Nile University and collaborating across multiple engineering projects, Youssef has consistently impressed me with his intelligence, dedication, and work ethic. He is a quick learner, eager to take on new challenges, and a great team player. He has a strong foundation in computer science fundamentals and is able to think critically and solve problems creatively.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-2-rel">Classmates &amp; Project Collaborator</span>
+              <a href="https://www.linkedin.com/in/yassin-elasfar/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Rec 3: Mostafa Fathi -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">MF</div>
+                <div class="rec-info">
+                  <h4>Mostafa Fathi</h4>
+                  <p class="rec-role">Senior Java Software Engineer @ GOSI | MSc. Student @ Nile University</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">Senior Engineer</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-3-quote">
+              Youssef consistently demonstrated an exceptional aptitude for Advanced Computing and a strong work ethic. He exhibited a deep understanding of complex computational concepts and was always eager to take on challenging assignments. His passion for learning, problem-solving skills, and dedication make him a standout student who will undoubtedly excel and make a positive impact in the industry.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-3-rel">Instructor to Youssef</span>
+              <a href="https://www.linkedin.com/in/mostafa-fathi-mohamed/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Rec 4: Eng. Fatma Helal -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">FH</div>
+                <div class="rec-info">
+                  <h4>Fatma Helal</h4>
+                  <p class="rec-role">Teaching Assistant, School of Engineering &amp; Applied Science, Nile University</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">Faculty</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-4-quote">
+              Youssef is one of the most exceptional students I have encountered in my years of teaching. He impressed me with his ability to articulate difficult concepts and his team leadership during our semester project. His caring nature allows him to work well in team settings, respecting everyone's opinions. He is talented, intuitive, dedicated, and focused in his pursuits.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-4-rel">Course Instructor / TA</span>
+              <a href="https://www.linkedin.com/in/fatma-helal-ba550218a/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Rec 5: Mohamed Youssef -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">MY</div>
+                <div class="rec-info">
+                  <h4>Mohamed Youssef</h4>
+                  <p class="rec-role">Teaching Assistant | Data Analyst | Data Science | Project Management</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">Academic</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-5-quote">
+              Youssef is an excellent student that works so hard. He has great coding skills and problem solving in many languages like Python and C++. Also, he got many soft skills that makes him fit for any role that requires both technical and soft skills.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-5-rel">Teaching Assistant</span>
+              <a href="https://www.linkedin.com/in/mohamed-youssef-elshahed/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Rec 6: Salma Khaled -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">SK</div>
+                <div class="rec-info">
+                  <h4>Salma Khaled</h4>
+                  <p class="rec-role">AI/ML Engineer | MSc in AI | NLP Specialist</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">AI Specialist</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-6-quote">
+              He is a very clever student with high skills, he is diligent and hardworking.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-6-rel">Teacher / Academic Mentor</span>
+              <a href="https://www.linkedin.com/in/salmakhaled708/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Rec 7: Abdelrhman Salah -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">AS</div>
+                <div class="rec-info">
+                  <h4>Abdelrhman Salah</h4>
+                  <p class="rec-role">GCP Cloud Engineer @ xperience 1st | Nile University CS Senior</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">Cloud Peer</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-7-quote">
+              I have had the pleasure of knowing Youssef for 3 years, and I have been consistently impressed by his intelligence, dedication, and passion for computer science. He is a creative and innovative thinker and an asset to any team or organization.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-7-rel">Classmates (3+ Years)</span>
+              <a href="https://www.linkedin.com/in/abdelrhman-salah-b8299626a/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Rec 8: Youssef Hatem -->
+          <article class="rec-card">
+            <div class="rec-top">
+              <div class="rec-author-wrap">
+                <div class="rec-avatar">YH</div>
+                <div class="rec-info">
+                  <h4>Youssef Hatem</h4>
+                  <p class="rec-role">Mobile Developer | Flutter Developer | Software Engineer</p>
+                </div>
+              </div>
+              <span class="rec-badge-tag">Software Peer</span>
+            </div>
+            <p class="rec-quote" data-i18n="rec-8-quote">
+              After working with Youssef Ashraf in many projects, I noticed that Youssef gives a lot of effort in every task he does in any project. He is a skilled software developer, outstanding in performing team work, and he is also excellent at mathematics at all its branches.
+            </p>
+            <div class="rec-footer">
+              <span class="rec-relation" data-i18n="rec-8-rel">Project Teammate</span>
+              <a href="https://www.linkedin.com/in/youssef-hatem-81291a222/" target="_blank" rel="noopener noreferrer" class="rec-li-link">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="terminal-section" class="terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag mono-text" data-i18n="cli-tag">07 // INTERACTIVE CLI INTERFACE</span>
+          <h2 class="section-title" data-i18n="cli-title">Youssef’s Cloud Terminal</h2>
+          <p class="section-desc">
+            Type simulated commands or click the shortcut buttons below to inspect infrastructure status, deploy mock pods, or view my credentials.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-topbar">
+            <div class="terminal-buttons">
+              <span class="term-btn close"></span>
+              <span class="term-btn minimize"></span>
+              <span class="term-btn maximize"></span>
+            </div>
+            <div class="terminal-title mono-text">youssef@devops-cluster: ~ (bash)</div>
+            <div class="terminal-actions">
+              <button id="term-clear-btn" class="term-action-btn" title="Clear Terminal">Clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-output" tabindex="0" role="region" aria-live="polite">
+            <div class="term-line output info-banner">
+              Welcome to Youssef Ashraf ElNaggar's Interactive DevOps Console [v2.4.0-cloud]<br/>
+              Type <span class="highlight">help</span> or click quick commands below to explore.
+            </div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="terminal-prompt mono-text">youssef@k8s:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input mono-text" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. help, skills, projects, contact, kubectl)..." />
+            <button id="terminal-submit-btn" class="terminal-send-btn" aria-label="Run command">RUN</button>
+          </div>
+
+          <div class="terminal-quick-pills">
+            <span class="pills-label mono-text">Quick Run:</span>
+            <button class="pill-btn" data-cmd="skills">skills</button>
+            <button class="pill-btn" data-cmd="projects">projects</button>
+            <button class="pill-btn" data-cmd="kubectl get pods">kubectl get pods</button>
+            <button class="pill-cmd" data-cmd="docker stats">docker stats</button>
+            <button class="pill-btn" data-cmd="metrics">metrics</button>
+            <button class="pill-btn" data-cmd="cat resume.txt">cat resume.txt</button>
+            <button class="pill-btn" data-cmd="contact">contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 CONTACT & HIRE ME SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="availability-badge">
+              <span class="pulse-dot"></span> Available for Immediate Full-Time Employment
+            </span>
+            <h2 class="contact-title" data-i18n="contact-title">Let’s Build Resilient Infrastructure Together</h2>
+            <p class="contact-subtitle">
+              Seeking DevOps &amp; Cloud Infrastructure Engineer roles. Whether you have an open position, need infrastructure optimization, or want to discuss automated CI/CD pipelines, I’m ready to contribute immediately.
+            </p>
+          </div>
+
+          <div class="contact-channels">
+            
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-title" data-i18n="contact-email-title">Direct Email</span>
+                <a href="mailto:youssef.ashraf.elnaggar@gmail.com" class="channel-value" id="email-text">youssef.ashraf.elnaggar@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="youssef.ashraf.elnaggar@gmail.com" title="Copy Email to Clipboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy
+              </button>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-title" data-i18n="contact-phone-title">Phone &amp; WhatsApp</span>
+                <a href="https://wa.me/201026735485?text=Hello%20Youssef,%20I%20saw%20your%20DevOps%20portfolio!" target="_blank" rel="noopener noreferrer" class="channel-value">+20 01026735485</a>
+              </div>
+              <div class="btn-group-sm">
+                <a href="https://wa.me/201026735485?text=Hello%20Youssef,%20I%20saw%20your%20DevOps%20portfolio!" target="_blank" rel="noopener noreferrer" class="copy-btn chat-wa-btn" title="Open WhatsApp Chat">
+                  WhatsApp ↗
+                </a>
+                <button class="copy-btn" data-copy="+2001026735485" title="Copy Phone Number">
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-title" data-i18n="contact-loc-title">Location &amp; Relocation</span>
+                <span class="channel-value" data-i18n="contact-loc-val">6th October, Giza / Cairo, Egypt &bull; Open to Onsite, Hybrid, Remote &amp; Relocation</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links-row">
+            <a href="https://www.linkedin.com/in/youssef-ashraf-el-naggar/" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 1.65-1.64 1.65 1.65 0 0 0-1.65-1.64 1.64 1.64 0 0 0-1.64 1.64 1.64 1.64 0 0 0 1.64 1.64m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+              LinkedIn Profile ↗
+            </a>
+            <a href="https://github.com/Youssef22Ashraf" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              GitHub (Youssef22Ashraf) ↗
+            </a>
+            <a href="https://upwork.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-3.238 0-5.184 2.186-5.836 4.708-1.503-2.146-2.644-4.836-3.04-6.868H6.559v8.423c0 1.942-1.579 3.521-3.521 3.521-.497 0-.968-.112-1.393-.301V20.2c.451.139.926.222 1.393.222 3.238 0 5.867-2.628 5.867-5.867V8.528c.455 1.497 1.396 3.619 2.703 5.485l-1.921 8.987h3.197l1.371-6.42c1.073.744 2.378 1.189 3.805 1.189 3.238 0 5.867-2.629 5.867-5.867s-2.629-5.884-5.884-5.884z"/></svg>
+              Upwork Freelance ↗
+            </a>
+            <button id="view-resume-btn" class="social-btn highlight-btn" data-i18n="view-full-resume-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              View Full Résumé
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="mono-text">&copy; 2026 Youssef Ashraf ElNaggar</span>
+        <span class="footer-sep">&bull;</span>
+        <span>DevOps &amp; Cloud Infrastructure Engineer</span>
+      </div>
+      <div class="footer-right mono-text">
+        <span>Cairo / Giza, Egypt &bull; AWS &bull; Kubernetes &bull; Terraform &bull; Ansible</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= ARCHITECTURE MODALS ================= -->
+
+  <!-- Modal 1: Proctoring -->
+  <dialog id="modal-proctoring" class="arch-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
+          <h3 class="modal-title">Live Proctoring &amp; Assessment Platform</h3>
+        </div>
+        <button class="close-modal-btn" data-close="modal-proctoring">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="diagram-container">
+          <div class="arch-diagram">
+            <div class="arch-node client-node">
+              <span class="node-title">Candidate Browser</span>
+              <span class="node-sub">React 19 + IndexedDB</span>
+              <span class="node-badge">Chunk Buffering</span>
+            </div>
+            <div class="arch-arrow">&rarr; WSS &amp; HTTPS &rarr;</div>
+            <div class="arch-node server-node">
+              <span class="node-title">Express API Gateway</span>
+              <span class="node-sub">Socket.IO Server</span>
+              <span class="node-badge">Docker Alpine</span>
+            </div>
+            <div class="arch-arrow">&rarr; Audit / Logs &rarr;</div>
+            <div class="arch-node db-node">
+              <span class="node-title">Railway + Sentry</span>
+              <span class="node-sub">APM &amp; Trace Scorer</span>
+              <span class="node-badge">Supervisor Dashboard</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-specs">
+          <h4>DevOps &amp; Architectural Highlights:</h4>
+          <ul>
+            <li><strong>Multi-stage Docker Alpine Build:</strong> Minimized surface attack area and image footprint for ultrafast CI deployments.</li>
+            <li><strong>Webcam Resilience:</strong> Video stream chunking with <code>MediaRecorder</code> and local <code>IndexedDB</code> buffer ensures 0 video loss even through network drops.</li>
+            <li><strong>Anti-Cheat Telemetry:</strong> Real-time tab-blur events and audio/video activity streamed over WebSocket to supervisor audit logs.</li>
+            <li><strong>Production Reliability:</strong> Sentry APM tracking live session errors and real-time alerts.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 2: Energy Optimization -->
+  <dialog id="modal-energy" class="arch-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
+          <h3 class="modal-title">AI-driven Energy Optimization Framework</h3>
+        </div>
+        <button class="close-modal-btn" data-close="modal-energy">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="diagram-container">
+          <div class="arch-diagram">
+            <div class="arch-node client-node">
+              <span class="node-title">GitHub Actions</span>
+              <span class="node-sub">Automated CI/CD Pipeline</span>
+              <span class="node-badge">Lint &bull; Test &bull; Build</span>
+            </div>
+            <div class="arch-arrow">&rarr; GCR Image &rarr;</div>
+            <div class="arch-node server-node">
+              <span class="node-title">Google Cloud Run</span>
+              <span class="node-sub">Serverless Container API</span>
+              <span class="node-badge">Zero Downtime</span>
+            </div>
+            <div class="arch-arrow">&rarr; IDF &amp; RAG &rarr;</div>
+            <div class="arch-node db-node">
+              <span class="node-title">Python RAG Engine</span>
+              <span class="node-sub">2D/3D Geometry &amp; LLM</span>
+              <span class="node-badge">Energy Prediction</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-specs">
+          <h4>DevOps &amp; Architectural Highlights:</h4>
+          <ul>
+            <li><strong>Zero-Downtime Rollouts:</strong> Seamless traffic migration on Google Cloud Run without service interruptions.</li>
+            <li><strong>Reproducible Microservices:</strong> Standardized Python container image handling IDF simulation files, vector indexing, and geometric models.</li>
+            <li><strong>Automated Pipeline:</strong> Automated test execution and Artifact Registry push triggered on branch merge.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 3: Bookstore Microservices -->
+  <dialog id="modal-bookstore" class="arch-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
+          <h3 class="modal-title">Hybrid Multi-Tier Microservices on AWS EKS</h3>
+        </div>
+        <button class="close-modal-btn" data-close="modal-bookstore">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="diagram-container">
+          <div class="arch-diagram">
+            <div class="arch-node client-node">
+              <span class="node-title">Terraform (AWS)</span>
+              <span class="node-sub">VPC, Subnets, EKS, EC2</span>
+              <span class="node-badge">IaC Declarative</span>
+            </div>
+            <div class="arch-arrow">&rarr; Ansible &rarr;</div>
+            <div class="arch-node server-node">
+              <span class="node-title">Jenkins on EC2</span>
+              <span class="node-sub">CI/CD Automation</span>
+              <span class="node-badge">KubeSeal Secrets</span>
+            </div>
+            <div class="arch-arrow">&rarr; Deploy &rarr;</div>
+            <div class="arch-node db-node">
+              <span class="node-title">AWS EKS Cluster</span>
+              <span class="node-sub">Microservices Pods</span>
+              <span class="node-badge">Prometheus / Grafana</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-specs">
+          <h4>DevOps &amp; Architectural Highlights:</h4>
+          <ul>
+            <li><strong>Infrastructure as Code:</strong> Entire AWS footprint (VPCs, security groups, subnets, EKS cluster) managed via modular Terraform.</li>
+            <li><strong>Ansible Configuration:</strong> Automated Jenkins host provisioning on EC2, tool chains, and security hardening.</li>
+            <li><strong>KubeSeal Encrypted Secrets:</strong> Safe GitOps repository storage of credentials via asymmetric cryptography.</li>
+            <li><strong>Telemetry:</strong> Prometheus scraping cluster metrics with pre-configured Grafana operational dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 4: Go Redis Microservice -->
+  <dialog id="modal-go-redis" class="arch-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
+          <h3 class="modal-title">97.5% Optimized Go Microservice with Redis StatefulSets</h3>
+        </div>
+        <button class="close-modal-btn" data-close="modal-go-redis">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="diagram-container">
+          <div class="arch-diagram">
+            <div class="arch-node client-node">
+              <span class="node-title">Multi-stage Docker</span>
+              <span class="node-sub">Golang Builder &rarr; Scratch/Alpine</span>
+              <span class="node-badge">1 GB &rarr; 24.5 MB (-97.5%)</span>
+            </div>
+            <div class="arch-arrow">&rarr; Cluster &rarr;</div>
+            <div class="arch-node server-node">
+              <span class="node-title">Kubernetes App Pod</span>
+              <span class="node-sub">Compiled Go Binary</span>
+              <span class="node-badge">NodePort Service</span>
+            </div>
+            <div class="arch-arrow">&rarr; Persistent &rarr;</div>
+            <div class="arch-node db-node">
+              <span class="node-title">Redis StatefulSet</span>
+              <span class="node-sub">PVCs &amp; ConfigMaps</span>
+              <span class="node-badge">Resilient Cache</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-specs">
+          <h4>DevOps &amp; Architectural Highlights:</h4>
+          <ul>
+            <li><strong>Extreme Footprint Reduction:</strong> Eliminated compiler artifacts, reducing container size from ~1 GB to 24.5 MB, accelerating pull times.</li>
+            <li><strong>StatefulSet Persistence:</strong> Bound Redis instances to Persistent Volume Claims (PVC) to guarantee data persistence during pod rescheduling.</li>
+            <li><strong>ConfigMap Isolation:</strong> Application and Redis configurations managed decoupled from container runtime images.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 5: Full Resume Modal -->
+  <dialog id="modal-resume" class="arch-modal resume-modal">
+    <div class="modal-box large">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag mono-text">// OFFICIAL CREDENTIALS</span>
+          <h3 class="modal-title">Youssef Ashraf ElNaggar &ndash; Official Resume</h3>
+        </div>
+        <div class="modal-header-actions">
+          <a href="Youssef-Ashraf-Resume.pdf" download="Youssef-Ashraf-Resume.pdf" class="mini-btn highlight-btn" title="Download official PDF file">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download PDF</span>
+          </a>
+          <a href="Youssef-Ashraf-Resume.pdf" target="_blank" rel="noopener noreferrer" class="mini-btn" title="Open PDF in new tab">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <span>Fullscreen ↗</span>
+          </a>
+          <button id="print-resume-btn" class="mini-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print
+          </button>
+          <button class="close-modal-btn" data-close="modal-resume">&times;</button>
+        </div>
+      </div>
+
+      <!-- View Switcher Tabs -->
+      <div class="resume-tabs-nav">
+        <button id="tab-btn-pdf" class="resume-tab-btn active">
+          <span>Official PDF Document (Original)</span>
+        </button>
+        <button id="tab-btn-text" class="resume-tab-btn">
+          <span>ATS Web Text View</span>
+        </button>
+      </div>
+
+      <div class="modal-body resume-body">
+        <!-- Tab 1: Real PDF Embed -->
+        <div id="resume-tab-pdf-content" class="resume-tab-pane">
+          <div class="pdf-viewer-wrap">
+            <iframe src="Youssef-Ashraf-Resume.pdf#toolbar=1&navpanes=0&scrollbar=1" class="resume-pdf-frame" title="Youssef Ashraf Resume PDF">
+              <p>Your browser does not support inline PDFs. <a href="Youssef-Ashraf-Resume.pdf" target="_blank">Click here to view or download the PDF</a>.</p>
+            </iframe>
+          </div>
+          <div class="pdf-fallback-bar">
+            <span>Official Resume:</span>
+            <a href="Youssef-Ashraf-Resume.pdf" target="_blank" class="download-link">Open PDF in Browser Tab ↗</a>
+            <span class="sep">&bull;</span>
+            <a href="Youssef-Ashraf-Resume.pdf" download="Youssef-Ashraf-Resume.pdf" class="download-link">Download Direct PDF (99 KB) ↓</a>
+          </div>
+        </div>
+
+        <!-- Tab 2: ATS Web Document -->
+        <div id="resume-tab-text-content" class="resume-tab-pane" style="display: none;">
+          <div class="resume-doc" id="printable-resume">
+        <div class="resume-doc">
+          <div class="res-head">
+            <h2>Youssef Ashraf ElNaggar</h2>
+            <div class="res-sub">DevOps &amp; Cloud Infrastructure Engineer</div>
+            <div class="res-contacts">
+              <span>youssef.ashraf.elnaggar@gmail.com</span> &bull; 
+              <span>01026735485</span> &bull; 
+              <span>6th October, Giza, Egypt</span>
+            </div>
+            <div class="res-avail">Available for Immediate Full-Time Employment</div>
+          </div>
+
+          <div class="res-sec">
+            <h3>Experience</h3>
+            <div class="res-item">
+              <div class="res-row">
+                <strong>DevOps Engineer Intern &mdash; Valeo</strong>
+                <span>07/2024 &ndash; 09/2024 &bull; Cairo, Egypt</span>
+              </div>
+              <ul>
+                <li>Automated multi-OS Docker image builds and CI workflows using Bash, Python, and Jenkins, slashing manual intervention by 40%.</li>
+                <li>Maintained persistent, secure SSH connectivity across 200+ machines, resolving deployment dropouts and system accessibility bottlenecks.</li>
+                <li>Automated Git version upgrades across CI nodes and synchronized artifact management in Nexus via Ansible playbooks, decreasing repository sync errors by 80%.</li>
+                <li>Standardized CI environment roles and variable auditing using Ansible, boosting debugging and triage efficiency by 50%.</li>
+              </ul>
+            </div>
+
+            <div class="res-item">
+              <div class="res-row">
+                <strong>DevOps Engineer Intern &mdash; STEM Entrepreneurship Center</strong>
+                <span>03/2025 &ndash; 05/2025 &bull; Cairo, Egypt</span>
+              </div>
+              <ul>
+                <li>Containerized multi-service applications using Docker and automated deployment pipelines with Jenkins.</li>
+                <li>Conducted practical workshops and technical mentorship on container best practices, Git branching strategies, and CI/CD pipelines.</li>
+              </ul>
+            </div>
+
+            <div class="res-item">
+              <div class="res-row">
+                <strong>Software &amp; Process Automation Intern &mdash; Valeo</strong>
+                <span>08/2023 &ndash; 09/2023 &bull; Cairo, Egypt</span>
+              </div>
+              <ul>
+                <li>Automated internal project management reports and analytics dashboards using JavaScript / Google Apps Script, reducing manual reporting overhead by 60%.</li>
+                <li>Built visual analytical tracking models (gauge &amp; pie charts), saving team leads 4+ hours per week on manual calculations.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="res-sec">
+            <h3>Projects</h3>
+            <div class="res-item">
+              <div class="res-row">
+                <strong>Workplace Assessment &amp; Live Proctoring Platform (Client: Mofarreh Group)</strong>
+                <span>09/2026</span>
+              </div>
+              <ul>
+                <li>Architected and deployed a production assessment platform with real-time Socket.IO supervisor auditing, server-side exam scoring, and anti-cheat tab-blur monitoring.</li>
+                <li>Built webcam proctoring with MediaRecorder and IndexedDB chunk buffering; containerized React 19 &amp; Express with multi-stage Alpine Docker, deployed to Railway with Sentry APM.</li>
+              </ul>
+            </div>
+
+            <div class="res-item">
+              <div class="res-row">
+                <strong>AI-driven Energy Optimization Framework (Nile University - Graduation Project)</strong>
+                <span>10/2024 &ndash; 06/2025</span>
+              </div>
+              <ul>
+                <li>Built and containerized scalable Python backend processing IDF design files, 2D/3D visualizations, and RAG/LLM pipelines with Docker.</li>
+                <li>Automated end-to-end CI/CD via GitHub Actions and deployed microservice APIs to Google Cloud Run, delivering zero-downtime rollouts and secure ingress.</li>
+              </ul>
+            </div>
+
+            <div class="res-item">
+              <div class="res-row">
+                <strong>Hybrid Multi-Tier &amp; Microservices Deployment (DEPI - Graduation Project)</strong>
+                <span>03/2025 &ndash; 05/2025</span>
+              </div>
+              <ul>
+                <li>Containerized bookstore microservices with Docker; deployed onto AWS EKS with Terraform IaC.</li>
+                <li>Configured Jenkins CI/CD on EC2 via Ansible playbooks, secured secrets with KubeSeal, and set up Prometheus &amp; Grafana observability.</li>
+              </ul>
+            </div>
+
+            <div class="res-item">
+              <div class="res-row">
+                <strong>High-Performance Go Microservice with Redis &amp; Kubernetes (DEPI Program)</strong>
+                <span>02/2025</span>
+              </div>
+              <ul>
+                <li>Optimized a Go-Redis application with Docker &amp; K8s, reducing image size by 97.5% (1GB &rarr; 24.5MB).</li>
+                <li>Configured StatefulSets, PVCs, ConfigMaps, and NodePort services for high-speed persistent caching.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="res-sec">
+            <h3>Education &amp; Training</h3>
+            <div class="res-item">
+              <div class="res-row">
+                <strong>Bachelor of Information Technology and Computer Science &mdash; Nile University</strong>
+                <span>Class of 2025</span>
+              </div>
+              <p>Cumulative GPA: <strong>3.95 / 4.00 (Graduated with Highest Honors / Excellence)</strong> &bull; Graduation Project: Grade Excellent</p>
+            </div>
+            <div class="res-item">
+              <div class="res-row">
+                <strong>DevOps Training &mdash; DEPI Program (MCIT)</strong>
+                <span>10/2024 &ndash; 05/2025</span>
+              </div>
+              <p>Hands-on training in AWS, Docker, Kubernetes, Ansible, Terraform, Jenkins, Prometheus, and Grafana.</p>
+            </div>
+          </div>
+
+          <div class="res-sec">
+            <h3>Technical Skills</h3>
+            <p><strong>Cloud &amp; Infrastructure:</strong> AWS (EC2, EKS, S3, IAM), Google Cloud Platform (Cloud Run), Docker, Docker Compose, Kubernetes (K8s), Terraform, Ansible</p>
+            <p><strong>CI/CD &amp; Automation:</strong> Jenkins, GitHub Actions, Linux Administration (Ubuntu/Alpine), Bash Scripting, Git, Nexus</p>
+            <p><strong>Observability &amp; Reliability:</strong> Prometheus, Grafana, Sentry APM, ELK Stack, Metric Collection</p>
+            <p><strong>Programming &amp; Scripting:</strong> Python, Bash, Go (Golang), TypeScript, JavaScript, SQL, C++</p>
+            <p><strong>Databases &amp; Caching:</strong> PostgreSQL, Redis, SQLite, Prisma ORM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </dialog>
+
+  <!-- Interactive Toast Notification Element -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js?v=2.2"></script>
+</body>
+</html>
