@@ -4,7 +4,8 @@
   "description": "> A high-performance, dark-mode, interactive engineering portfolio designed specifically for **DevOps & Cloud Infrastructure Engineers**. Built with clean HTML5, modern vanilla CSS3, and ES6 modular JavaScript. Ready for instant deployment on [Vercel](https://vercel.com).",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo \"Static site ready\"",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
