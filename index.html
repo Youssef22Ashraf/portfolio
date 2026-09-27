@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="style.css?v=2.3" />
+  <link rel="stylesheet" href="style.css?v=2.4" />
 
   <!-- Vercel Web Analytics -->
   <script>
@@ -1338,185 +1338,833 @@
 
   <!-- ================= ARCHITECTURE MODALS ================= -->
 
-  <!-- Modal 1: Proctoring -->
+  <!-- ==========================================================================
+       ENTERPRISE DEVOPS ARCHITECTURE BLUEPRINT MODALS
+       ========================================================================== -->
+
+  <!-- Modal 1: Proctoring Platform (Mofarreh Group) -->
   <dialog id="modal-proctoring" class="arch-modal">
-    <div class="modal-box">
-      <div class="modal-header">
+    <div class="modal-box blueprint-box">
+      <div class="bp-header-wrap">
         <div>
-          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
-          <h3 class="modal-title">Live Proctoring &amp; Assessment Platform</h3>
+          <span class="bp-tagline"><span class="live-dot"></span> DevOps Architecture Blueprint // Client: Mofarreh Group</span>
+          <h3 class="bp-modal-title">Live Proctoring &amp; Assessment Platform</h3>
         </div>
-        <button class="close-modal-btn" data-close="modal-proctoring">&times;</button>
+        <button class="close-modal-btn" data-close="modal-proctoring" aria-label="Close modal">&times;</button>
       </div>
-      <div class="modal-body">
-        <div class="diagram-container">
-          <div class="arch-diagram">
-            <div class="arch-node client-node">
-              <span class="node-title">Candidate Browser</span>
-              <span class="node-sub">React 19 + IndexedDB</span>
-              <span class="node-badge">Chunk Buffering</span>
+
+      <!-- Top Telemetry Ribbon -->
+      <div class="bp-telemetry-ribbon">
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Hosting &amp; Runtime</span>
+          <span class="bp-tel-val">Railway Production PaaS</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Container Engine</span>
+          <span class="bp-tel-val">Multi-Stage Node 20 Alpine</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Live Streaming</span>
+          <span class="bp-tel-val">Socket.IO Event Bus (WSS)</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Telemetry &amp; APM</span>
+          <span class="bp-tel-val">Sentry Session Tracing</span>
+        </div>
+      </div>
+
+      <!-- Architectural Topology Canvas -->
+      <div class="bp-canvas-container">
+        <div class="bp-canvas-badge">Infrastructure Flow Topology</div>
+        <div class="bp-topology-grid">
+          
+          <!-- Tier 1: Client Edge -->
+          <div class="bp-tier-column highlight-cyan">
+            <span class="bp-tier-label">Zone 01 // Client Edge</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Candidate UI</span>
+                <span class="bp-node-port">Browser</span>
+              </div>
+              <div class="bp-node-name">Candidate Web Client</div>
+              <div class="bp-node-desc">React 19 &bull; MediaRecorder API &bull; Tab-blur anti-cheat tracking</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">IndexedDB Buffer</span>
+                <span class="bp-mini-tag">0% Video Loss</span>
+              </div>
             </div>
-            <div class="arch-arrow">&rarr; WSS &amp; HTTPS &rarr;</div>
-            <div class="arch-node server-node">
-              <span class="node-title">Express API Gateway</span>
-              <span class="node-sub">Socket.IO Server</span>
-              <span class="node-badge">Docker Alpine</span>
-            </div>
-            <div class="arch-arrow">&rarr; Audit / Logs &rarr;</div>
-            <div class="arch-node db-node">
-              <span class="node-title">Railway + Sentry</span>
-              <span class="node-sub">APM &amp; Trace Scorer</span>
-              <span class="node-badge">Supervisor Dashboard</span>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Auditor UI</span>
+                <span class="bp-node-port">Browser</span>
+              </div>
+              <div class="bp-node-name">Supervisor Dashboard</div>
+              <div class="bp-node-desc">Real-time candidate monitoring &bull; Live audio/video stream auditor</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Multi-Feed</span>
+                <span class="bp-mini-tag">Audit Console</span>
+              </div>
             </div>
           </div>
+
+          <!-- Connector 1 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">HTTPS / WSS</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 2: Ingress & Gateway -->
+          <div class="bp-tier-column highlight-purple">
+            <span class="bp-tier-label">Zone 02 // Ingress &amp; Gateway</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Reverse Proxy</span>
+                <span class="bp-node-port">:443 TLS 1.3</span>
+              </div>
+              <div class="bp-node-name">Ingress Edge Router</div>
+              <div class="bp-node-desc">SSL Termination &bull; DDoS Mitigation &bull; WebSocket Upgrade routing</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Auto Certs</span>
+                <span class="bp-mini-tag">Rate Limiting</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Gateway Service</span>
+                <span class="bp-node-port">:3000 WSS</span>
+              </div>
+              <div class="bp-node-name">Express API &amp; Socket.IO</div>
+              <div class="bp-node-desc">Lightweight container &bull; Exam state sync &bull; Candidate heartbeat</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Alpine Linux</span>
+                <span class="bp-mini-tag">Sub-second Sync</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">Internal IPC</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 3: Compute & Scoring -->
+          <div class="bp-tier-column highlight-green">
+            <span class="bp-tier-label">Zone 03 // Compute &amp; State</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Scoring Engine</span>
+                <span class="bp-node-port">Internal</span>
+              </div>
+              <div class="bp-node-name">Server-Side Exam Evaluator</div>
+              <div class="bp-node-desc">Automated grade computation &bull; Tamper-proof server clock validation</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Isolated Sandbox</span>
+                <span class="bp-mini-tag">Deterministic</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Buffer Volume</span>
+                <span class="bp-node-port">Mounted Vol</span>
+              </div>
+              <div class="bp-node-name">Chunk Aggregator Storage</div>
+              <div class="bp-node-desc">Assembles indexedDB video slices into coherent audit recordings</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Lossless Assembly</span>
+                <span class="bp-mini-tag">Encrypted</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 3 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">APM Logs</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 4: SRE Observability -->
+          <div class="bp-tier-column">
+            <span class="bp-tier-label">Zone 04 // Observability Plane</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">SRE Platform</span>
+                <span class="bp-node-port">Railway Core</span>
+              </div>
+              <div class="bp-node-name">PaaS Orchestrator</div>
+              <div class="bp-node-desc">Automated health-checks &bull; Container restart on failure &bull; CPU/RAM limits</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Self-Healing</span>
+                <span class="bp-mini-tag">Zero-Config CI</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">APM &amp; Trace</span>
+                <span class="bp-node-port">Sentry Cloud</span>
+              </div>
+              <div class="bp-node-name">Sentry APM Diagnostics</div>
+              <div class="bp-node-desc">Distributed request tracing &bull; Real-time unhandled exception alerts</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Session Replay</span>
+                <span class="bp-mini-tag">Telemetry</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="modal-specs">
-          <h4>DevOps &amp; Architectural Highlights:</h4>
-          <ul>
-            <li><strong>Multi-stage Docker Alpine Build:</strong> Minimized surface attack area and image footprint for ultrafast CI deployments.</li>
-            <li><strong>Webcam Resilience:</strong> Video stream chunking with <code>MediaRecorder</code> and local <code>IndexedDB</code> buffer ensures 0 video loss even through network drops.</li>
-            <li><strong>Anti-Cheat Telemetry:</strong> Real-time tab-blur events and audio/video activity streamed over WebSocket to supervisor audit logs.</li>
-            <li><strong>Production Reliability:</strong> Sentry APM tracking live session errors and real-time alerts.</li>
-          </ul>
+      </div>
+
+      <!-- Deep Dive Engineering Highlights -->
+      <div class="bp-specs-grid">
+        <div class="bp-spec-card">
+          <h5><span>🛡️</span> Zero Video Loss Resilience</h5>
+          <p>Candidate webcam streams are partitioned with <code>MediaRecorder</code> and buffered inside client <code>IndexedDB</code> before transmission. Network drops never lose footage.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>⚡</span> Multi-Stage Alpine Container</h5>
+          <p>Packaged with <code>node:20-alpine</code> stripping devDependencies. Decreased image build footprint by 78% for rapid continuous deployment cycles.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>👁️</span> Anti-Cheat Telemetry Pipeline</h5>
+          <p>Monitors window blur/focus events, secondary screen detection, and audio peaks, streaming structured audit payloads over encrypted WebSockets.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>📈</span> Full-Stack SRE Observability</h5>
+          <p>Integrated Sentry APM tracking API route latencies, transaction boundaries, and client runtime exceptions with Slack webhook notifications.</p>
         </div>
       </div>
     </div>
   </dialog>
 
-  <!-- Modal 2: Energy Optimization -->
+  <!-- Modal 2: Energy Optimization Framework (Nile University) -->
   <dialog id="modal-energy" class="arch-modal">
-    <div class="modal-box">
-      <div class="modal-header">
+    <div class="modal-box blueprint-box">
+      <div class="bp-header-wrap">
         <div>
-          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
-          <h3 class="modal-title">AI-driven Energy Optimization Framework</h3>
+          <span class="bp-tagline"><span class="live-dot"></span> DevOps Architecture Blueprint // Nile University Graduation Project</span>
+          <h3 class="bp-modal-title">AI-driven Energy Optimization Framework</h3>
         </div>
-        <button class="close-modal-btn" data-close="modal-energy">&times;</button>
+        <button class="close-modal-btn" data-close="modal-energy" aria-label="Close modal">&times;</button>
       </div>
-      <div class="modal-body">
-        <div class="diagram-container">
-          <div class="arch-diagram">
-            <div class="arch-node client-node">
-              <span class="node-title">GitHub Actions</span>
-              <span class="node-sub">Automated CI/CD Pipeline</span>
-              <span class="node-badge">Lint &bull; Test &bull; Build</span>
+
+      <!-- Top Telemetry Ribbon -->
+      <div class="bp-telemetry-ribbon">
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Serverless Cloud</span>
+          <span class="bp-tel-val">Google Cloud Run (GCP)</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">CI/CD Engine</span>
+          <span class="bp-tel-val">GitHub Actions Automated</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Container Registry</span>
+          <span class="bp-tel-val">Google Artifact Registry</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Rollout Strategy</span>
+          <span class="bp-tel-val">Zero-Downtime Traffic Split</span>
+        </div>
+      </div>
+
+      <!-- Architectural Topology Canvas -->
+      <div class="bp-canvas-container">
+        <div class="bp-canvas-badge">Infrastructure Flow Topology</div>
+        <div class="bp-topology-grid">
+          
+          <!-- Tier 1: GitOps CI/CD -->
+          <div class="bp-tier-column highlight-cyan">
+            <span class="bp-tier-label">Zone 01 // CI/CD GitOps</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Version Control</span>
+                <span class="bp-node-port">Git Push</span>
+              </div>
+              <div class="bp-node-name">GitHub Repository</div>
+              <div class="bp-node-desc">Branch protection &bull; Trunk-based workflow &bull; Webhook triggers</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">main branch</span>
+                <span class="bp-mini-tag">GitOps</span>
+              </div>
             </div>
-            <div class="arch-arrow">&rarr; GCR Image &rarr;</div>
-            <div class="arch-node server-node">
-              <span class="node-title">Google Cloud Run</span>
-              <span class="node-sub">Serverless Container API</span>
-              <span class="node-badge">Zero Downtime</span>
-            </div>
-            <div class="arch-arrow">&rarr; IDF &amp; RAG &rarr;</div>
-            <div class="arch-node db-node">
-              <span class="node-title">Python RAG Engine</span>
-              <span class="node-sub">2D/3D Geometry &amp; LLM</span>
-              <span class="node-badge">Energy Prediction</span>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">CI Runner</span>
+                <span class="bp-node-port">GitHub Actions</span>
+              </div>
+              <div class="bp-node-name">Lint, Test &amp; Containerize</div>
+              <div class="bp-node-desc">Runs PyTest &bull; Flake8 lint &bull; Builds multi-stage Python container</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Automated Quality</span>
+                <span class="bp-mini-tag">CVE Scan</span>
+              </div>
             </div>
           </div>
+
+          <!-- Connector 1 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">OCI Image</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 2: Cloud Ingress & Ingestion -->
+          <div class="bp-tier-column highlight-purple">
+            <span class="bp-tier-label">Zone 02 // GCP Ingress</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Registry</span>
+                <span class="bp-node-port">GCP OCI</span>
+              </div>
+              <div class="bp-node-name">Artifact Registry (GCR)</div>
+              <div class="bp-node-desc">Immutable digest tags &bull; Automated vulnerability vulnerability analysis</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Verified Digest</span>
+                <span class="bp-mini-tag">Secure OCI</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Cloud Ingress</span>
+                <span class="bp-node-port">:443 SSL</span>
+              </div>
+              <div class="bp-node-name">Cloud Load Balancing</div>
+              <div class="bp-node-desc">Managed Google SSL &bull; Global edge routing &bull; Health probe validation</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Global Anycast</span>
+                <span class="bp-mini-tag">DDoS Shield</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">Serverless VPC</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 3: Compute Cluster -->
+          <div class="bp-tier-column highlight-green">
+            <span class="bp-tier-label">Zone 03 // Compute Cluster</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Serverless K8s</span>
+                <span class="bp-node-port">Cloud Run</span>
+              </div>
+              <div class="bp-node-name">Google Cloud Run Microservices</div>
+              <div class="bp-node-desc">FastAPI backend &bull; Auto-scales 0 &rarr; N instances &bull; Zero idle cost</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Traffic Splitting</span>
+                <span class="bp-mini-tag">Zero Downtime</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">AI Pipeline</span>
+                <span class="bp-node-port">In-Memory</span>
+              </div>
+              <div class="bp-node-name">IDF Parser &amp; RAG Vector Engine</div>
+              <div class="bp-node-desc">Extracts 3D building tensors &bull; RAG LLM simulation query pipeline</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Vector Index</span>
+                <span class="bp-mini-tag">EnergyPlus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 3 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">Telemetry</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 4: Storage & Monitoring -->
+          <div class="bp-tier-column">
+            <span class="bp-tier-label">Zone 04 // Persistence &amp; SRE</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Object Store</span>
+                <span class="bp-node-port">Cloud API</span>
+              </div>
+              <div class="bp-node-name">Google Cloud Storage (GCS)</div>
+              <div class="bp-node-desc">Stores raw IDF architectural blueprints &bull; Caches simulation tensors</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Geo-Redundant</span>
+                <span class="bp-mini-tag">Encrypted AES</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Monitoring</span>
+                <span class="bp-node-port">Cloud Trace</span>
+              </div>
+              <div class="bp-node-name">Google Cloud Monitoring</div>
+              <div class="bp-node-desc">Request latency percentiles (p95/p99) &bull; RAM utilization &bull; Alerting</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Real-Time SLOs</span>
+                <span class="bp-mini-tag">Audit Logs</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="modal-specs">
-          <h4>DevOps &amp; Architectural Highlights:</h4>
-          <ul>
-            <li><strong>Zero-Downtime Rollouts:</strong> Seamless traffic migration on Google Cloud Run without service interruptions.</li>
-            <li><strong>Reproducible Microservices:</strong> Standardized Python container image handling IDF simulation files, vector indexing, and geometric models.</li>
-            <li><strong>Automated Pipeline:</strong> Automated test execution and Artifact Registry push triggered on branch merge.</li>
-          </ul>
+      </div>
+
+      <!-- Deep Dive Engineering Highlights -->
+      <div class="bp-specs-grid">
+        <div class="bp-spec-card">
+          <h5><span>🚀</span> Zero-Downtime Traffic Splitting</h5>
+          <p>Cloud Run revisions enable instant canary testing (e.g. 90/10 traffic split). New deployments warm up before handling production load.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>🔄</span> Automated GitHub Actions CI/CD</h5>
+          <p>Trunk merges trigger automated PyTest test suites, security linter, and authenticated OIDC deployment to Google Artifact Registry.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>⚡</span> Elastic Serverless Autoscaling</h5>
+          <p>Instances automatically scale from 0 to peak concurrency based on incoming requests, optimizing cloud expenditure to zero during idle periods.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>📊</span> Production SRE Observability</h5>
+          <p>Cloud Monitoring metrics tracking inference latency and memory footprints, integrated with automated alert thresholds on 5xx error spikes.</p>
         </div>
       </div>
     </div>
   </dialog>
 
-  <!-- Modal 3: Bookstore Microservices -->
+  <!-- Modal 3: Hybrid Multi-Tier on AWS EKS (DEPI Project) -->
   <dialog id="modal-bookstore" class="arch-modal">
-    <div class="modal-box">
-      <div class="modal-header">
+    <div class="modal-box blueprint-box">
+      <div class="bp-header-wrap">
         <div>
-          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
-          <h3 class="modal-title">Hybrid Multi-Tier Microservices on AWS EKS</h3>
+          <span class="bp-tagline"><span class="live-dot"></span> DevOps Architecture Blueprint // DEPI Graduation Project</span>
+          <h3 class="bp-modal-title">Hybrid Multi-Tier Microservices on AWS EKS</h3>
         </div>
-        <button class="close-modal-btn" data-close="modal-bookstore">&times;</button>
+        <button class="close-modal-btn" data-close="modal-bookstore" aria-label="Close modal">&times;</button>
       </div>
-      <div class="modal-body">
-        <div class="diagram-container">
-          <div class="arch-diagram">
-            <div class="arch-node client-node">
-              <span class="node-title">Terraform (AWS)</span>
-              <span class="node-sub">VPC, Subnets, EKS, EC2</span>
-              <span class="node-badge">IaC Declarative</span>
+
+      <!-- Top Telemetry Ribbon -->
+      <div class="bp-telemetry-ribbon">
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Kubernetes Cluster</span>
+          <span class="bp-tel-val">AWS EKS v1.29 (Multi-AZ)</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Infrastructure as Code</span>
+          <span class="bp-tel-val">Modular Terraform 1.8</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Config Management</span>
+          <span class="bp-tel-val">Ansible Automation on EC2</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">GitOps Secrets</span>
+          <span class="bp-tel-val">Bitnami KubeSeal (RSA-4096)</span>
+        </div>
+      </div>
+
+      <!-- Architectural Topology Canvas -->
+      <div class="bp-canvas-container">
+        <div class="bp-canvas-badge">Infrastructure Flow Topology</div>
+        <div class="bp-topology-grid">
+          
+          <!-- Tier 1: IaC & Provisioning -->
+          <div class="bp-tier-column highlight-cyan">
+            <span class="bp-tier-label">Zone 01 // IaC &amp; Host Provisioning</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">IaC Engine</span>
+                <span class="bp-node-port">Terraform</span>
+              </div>
+              <div class="bp-node-name">Terraform Core Modules</div>
+              <div class="bp-node-desc">Provisions AWS VPC, 4 Subnets, IGW, NAT Gateways, IAM &amp; Security Groups</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Declarative</span>
+                <span class="bp-mini-tag">Multi-AZ</span>
+              </div>
             </div>
-            <div class="arch-arrow">&rarr; Ansible &rarr;</div>
-            <div class="arch-node server-node">
-              <span class="node-title">Jenkins on EC2</span>
-              <span class="node-sub">CI/CD Automation</span>
-              <span class="node-badge">KubeSeal Secrets</span>
-            </div>
-            <div class="arch-arrow">&rarr; Deploy &rarr;</div>
-            <div class="arch-node db-node">
-              <span class="node-title">AWS EKS Cluster</span>
-              <span class="node-sub">Microservices Pods</span>
-              <span class="node-badge">Prometheus / Grafana</span>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Config Mgmt</span>
+                <span class="bp-node-port">Ansible</span>
+              </div>
+              <div class="bp-node-name">Ansible Automation Engine</div>
+              <div class="bp-node-desc">Provisions Jenkins controller, installs Docker &amp; kubectl, hardens Linux OS</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Idempotent</span>
+                <span class="bp-mini-tag">SSH Automation</span>
+              </div>
             </div>
           </div>
+
+          <!-- Connector 1 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">CI Build</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 2: CI/CD & Secret Security -->
+          <div class="bp-tier-column highlight-purple">
+            <span class="bp-tier-label">Zone 02 // CI/CD &amp; GitOps Secrets</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">CI Engine</span>
+                <span class="bp-node-port">EC2 Instance</span>
+              </div>
+              <div class="bp-node-name">Jenkins Pipeline Controller</div>
+              <div class="bp-node-desc">Builds multi-stage Docker images &bull; Pushes verified artifacts to Docker Hub</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Declarative</span>
+                <span class="bp-mini-tag">Webhook Triggers</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">GitOps Secrets</span>
+                <span class="bp-node-port">KubeSeal</span>
+              </div>
+              <div class="bp-node-name">Sealed Secrets Controller</div>
+              <div class="bp-node-desc">Asymmetric RSA-4096 encryption for safe Git commit of credentials</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Zero Plaintext</span>
+                <span class="bp-mini-tag">Decrypted in K8s</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">Kube-API</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 3: Kubernetes Production Cluster -->
+          <div class="bp-tier-column highlight-green">
+            <span class="bp-tier-label">Zone 03 // AWS EKS Cluster (Private VPC)</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Ingress</span>
+                <span class="bp-node-port">ALB :443</span>
+              </div>
+              <div class="bp-node-name">NGINX Ingress Controller</div>
+              <div class="bp-node-desc">Path-based routing &bull; TLS termination &bull; Routes to internal services</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">AWS ALB</span>
+                <span class="bp-mini-tag">Subnet Routing</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Workloads</span>
+                <span class="bp-node-port">3x Replicas</span>
+              </div>
+              <div class="bp-node-name">Microservices Deployments</div>
+              <div class="bp-node-desc">Frontend &amp; Backend API &bull; RollingUpdate strategy &bull; Health Probes</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Zero Downtime</span>
+                <span class="bp-mini-tag">HPA Auto-scaling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 3 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">CSI / Scrape</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 4: Persistence & Observability Stack -->
+          <div class="bp-tier-column">
+            <span class="bp-tier-label">Zone 04 // Persistence &amp; SRE Plane</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">StatefulSet</span>
+                <span class="bp-node-port">PVC Storage</span>
+              </div>
+              <div class="bp-node-name">Database StatefulSet (EBS)</div>
+              <div class="bp-node-desc">AWS EBS GP3 CSI Driver &bull; PersistentVolumeClaims preserve state</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Zero Data Loss</span>
+                <span class="bp-mini-tag">Volume Snapshot</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Telemetry</span>
+                <span class="bp-node-port">:9090 / :3000</span>
+              </div>
+              <div class="bp-node-name">Prometheus &amp; Grafana</div>
+              <div class="bp-node-desc">Scrapes pod/node metrics &bull; Real-time Grafana dashboards &bull; Alertmanager</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Full Observability</span>
+                <span class="bp-mini-tag">SLO Dashboards</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="modal-specs">
-          <h4>DevOps &amp; Architectural Highlights:</h4>
-          <ul>
-            <li><strong>Infrastructure as Code:</strong> Entire AWS footprint (VPCs, security groups, subnets, EKS cluster) managed via modular Terraform.</li>
-            <li><strong>Ansible Configuration:</strong> Automated Jenkins host provisioning on EC2, tool chains, and security hardening.</li>
-            <li><strong>KubeSeal Encrypted Secrets:</strong> Safe GitOps repository storage of credentials via asymmetric cryptography.</li>
-            <li><strong>Telemetry:</strong> Prometheus scraping cluster metrics with pre-configured Grafana operational dashboards.</li>
-          </ul>
+      </div>
+
+      <!-- Deep Dive Engineering Highlights -->
+      <div class="bp-specs-grid">
+        <div class="bp-spec-card">
+          <h5><span>🏗️</span> 100% Declarative Terraform IaC</h5>
+          <p>Automated provisioning of VPC, EKS cluster, node groups, and IAM roles across multi-availability zones for true disaster resilience.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>🔐</span> Zero-Trust GitOps Encryption</h5>
+          <p>Utilized Bitnami Sealed Secrets with asymmetric RSA encryption. Sensitive secrets are committed safely to Git and decrypted exclusively inside EKS.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>⚡</span> Zero-Downtime Rolling Deployments</h5>
+          <p>Configured Kubernetes <code>RollingUpdate</code> with liveness/readiness probes, guaranteeing traffic only hits healthy pods during upgrades.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>📊</span> Production Prometheus SRE Stack</h5>
+          <p>Pre-configured Prometheus metrics scraper and Grafana executive dashboards tracking pod memory, cluster CPU saturation, and request error rates.</p>
         </div>
       </div>
     </div>
   </dialog>
 
-  <!-- Modal 4: Go Redis Microservice -->
+  <!-- Modal 4: Go Microservice with Redis StatefulSets -->
   <dialog id="modal-go-redis" class="arch-modal">
-    <div class="modal-box">
-      <div class="modal-header">
+    <div class="modal-box blueprint-box">
+      <div class="bp-header-wrap">
         <div>
-          <span class="modal-tag mono-text">// ARCHITECTURE BLUEPRINT</span>
-          <h3 class="modal-title">97.5% Optimized Go Microservice with Redis StatefulSets</h3>
+          <span class="bp-tagline"><span class="live-dot"></span> DevOps Architecture Blueprint // DEPI Program</span>
+          <h3 class="bp-modal-title">97.5% Optimized Go Microservice with Redis StatefulSets</h3>
         </div>
-        <button class="close-modal-btn" data-close="modal-go-redis">&times;</button>
+        <button class="close-modal-btn" data-close="modal-go-redis" aria-label="Close modal">&times;</button>
       </div>
-      <div class="modal-body">
-        <div class="diagram-container">
-          <div class="arch-diagram">
-            <div class="arch-node client-node">
-              <span class="node-title">Multi-stage Docker</span>
-              <span class="node-sub">Golang Builder &rarr; Scratch/Alpine</span>
-              <span class="node-badge">1 GB &rarr; 24.5 MB (-97.5%)</span>
+
+      <!-- Top Telemetry Ribbon -->
+      <div class="bp-telemetry-ribbon">
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Image Sized Slashed</span>
+          <span class="bp-tel-val">1 GB &rarr; 24.5 MB (-97.5%)</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Runtime Base</span>
+          <span class="bp-tel-val">Scratch Minimal Container</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Stateful Caching</span>
+          <span class="bp-tel-val">Redis StatefulSet + Headless</span>
+        </div>
+        <div class="bp-tel-pill">
+          <span class="bp-tel-key">Data Persistence</span>
+          <span class="bp-tel-val">K8s PersistentVolumeClaims (PVC)</span>
+        </div>
+      </div>
+
+      <!-- Architectural Topology Canvas -->
+      <div class="bp-canvas-container">
+        <div class="bp-canvas-badge">Infrastructure Flow Topology</div>
+        <div class="bp-topology-grid">
+          
+          <!-- Tier 1: Multi-Stage Build Optimization -->
+          <div class="bp-tier-column highlight-cyan">
+            <span class="bp-tier-label">Zone 01 // Container Sizing Engine</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Build Stage</span>
+                <span class="bp-node-port">Stage 1</span>
+              </div>
+              <div class="bp-node-name">golang:1.22-alpine Builder</div>
+              <div class="bp-node-desc">Compiles statically linked binary: <code>CGO_ENABLED=0 go build -ldflags="-s -w"</code></div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Compiler Sandbox</span>
+                <span class="bp-mini-tag">Symbols Stripped</span>
+              </div>
             </div>
-            <div class="arch-arrow">&rarr; Cluster &rarr;</div>
-            <div class="arch-node server-node">
-              <span class="node-title">Kubernetes App Pod</span>
-              <span class="node-sub">Compiled Go Binary</span>
-              <span class="node-badge">NodePort Service</span>
-            </div>
-            <div class="arch-arrow">&rarr; Persistent &rarr;</div>
-            <div class="arch-node db-node">
-              <span class="node-title">Redis StatefulSet</span>
-              <span class="node-sub">PVCs &amp; ConfigMaps</span>
-              <span class="node-badge">Resilient Cache</span>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Runtime Stage</span>
+                <span class="bp-node-port">Stage 2</span>
+              </div>
+              <div class="bp-node-name">Scratch Minimal Runtime</div>
+              <div class="bp-node-desc">Copies only static binary &bull; 0 shell, 0 package managers &bull; 0 CVE attack surface</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">24.5 MB Final</span>
+                <span class="bp-mini-tag">-97.5% Footprint</span>
+              </div>
             </div>
           </div>
+
+          <!-- Connector 1 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">K8s Deploy</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 2: Microservice Cluster -->
+          <div class="bp-tier-column highlight-purple">
+            <span class="bp-tier-label">Zone 02 // Kubernetes Workloads</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">K8s Service</span>
+                <span class="bp-node-port">NodePort :8080</span>
+              </div>
+              <div class="bp-node-name">Go Microservice Service</div>
+              <div class="bp-node-desc">Load balances client traffic across healthy pod replicas &bull; Health probe validation</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">TCP / HTTP</span>
+                <span class="bp-mini-tag">ClusterIP</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Deployment</span>
+                <span class="bp-node-port">3x Pods</span>
+              </div>
+              <div class="bp-node-name">Go App Replicas (HPA)</div>
+              <div class="bp-node-desc">Fast sub-millisecond compiled throughput &bull; Resource limits: CPU 250m, RAM 64Mi</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Sub-ms Latency</span>
+                <span class="bp-mini-tag">Self-Healing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">TCP :6379</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 3: StatefulSet Persistence -->
+          <div class="bp-tier-column highlight-green">
+            <span class="bp-tier-label">Zone 03 // Redis StatefulSets</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Headless Svc</span>
+                <span class="bp-node-port">CoreDNS</span>
+              </div>
+              <div class="bp-node-name">Headless Network Service</div>
+              <div class="bp-node-desc">Guarantees deterministic DNS addresses (<code>redis-0.redis</code>, <code>redis-1.redis</code>)</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Stable Identities</span>
+                <span class="bp-mini-tag">Ordered Boot</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">StatefulSet</span>
+                <span class="bp-node-port">K8s Pods</span>
+              </div>
+              <div class="bp-node-name">Redis In-Memory Cache</div>
+              <div class="bp-node-desc">Sub-millisecond data caching &bull; ConfigMap decoupling for TTLs and max-memory</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag">Ultra-Low Latency</span>
+                <span class="bp-mini-tag">ConfigMap Bound</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 3 -->
+          <div class="bp-connector-col">
+            <span class="bp-protocol-pill">Volume CSI</span>
+            <div class="bp-flow-line"></div>
+            <span class="bp-arrow-icon">&rarr;</span>
+          </div>
+
+          <!-- Tier 4: Storage & Health Probes -->
+          <div class="bp-tier-column">
+            <span class="bp-tier-label">Zone 04 // Storage &amp; Health Probes</span>
+            
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">Persistence</span>
+                <span class="bp-node-port">PVC Storage</span>
+              </div>
+              <div class="bp-node-name">Persistent Volume Claims</div>
+              <div class="bp-node-desc">Bound to physical StorageClass volumes &bull; Survives pod rescheduling and crashes</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Zero Data Loss</span>
+                <span class="bp-mini-tag">AOF / RDB Dump</span>
+              </div>
+            </div>
+
+            <div class="bp-node-card">
+              <div class="bp-node-header">
+                <span class="bp-node-category">SRE Probes</span>
+                <span class="bp-node-port">Kubelet</span>
+              </div>
+              <div class="bp-node-name">Liveness &amp; Readiness Probes</div>
+              <div class="bp-node-desc">Monitors <code>/healthz</code> endpoint &bull; Auto-restarts stalled pods &bull; Prevents traffic to dead nodes</div>
+              <div class="bp-node-tags">
+                <span class="bp-mini-tag active">Self-Healing</span>
+                <span class="bp-mini-tag">Automated Recover</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="modal-specs">
-          <h4>DevOps &amp; Architectural Highlights:</h4>
-          <ul>
-            <li><strong>Extreme Footprint Reduction:</strong> Eliminated compiler artifacts, reducing container size from ~1 GB to 24.5 MB, accelerating pull times.</li>
-            <li><strong>StatefulSet Persistence:</strong> Bound Redis instances to Persistent Volume Claims (PVC) to guarantee data persistence during pod rescheduling.</li>
-            <li><strong>ConfigMap Isolation:</strong> Application and Redis configurations managed decoupled from container runtime images.</li>
-          </ul>
+      </div>
+
+      <!-- Deep Dive Engineering Highlights -->
+      <div class="bp-specs-grid">
+        <div class="bp-spec-card">
+          <h5><span>📉</span> 97.5% Image Footprint Slashed</h5>
+          <p>By compiling statically in Alpine and shipping only the bare executable in a <code>scratch</code> container, image size shrank from ~1 GB to 24.5 MB with zero CVE vulnerability baggage.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>💾</span> Resilient StatefulSet Persistence</h5>
+          <p>Utilized Kubernetes StatefulSets with dynamic <code>PersistentVolumeClaims</code> so Redis state survives node rescheduling and cluster maintenance seamlessly.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>⚙️</span> Decoupled ConfigMaps &amp; Secrets</h5>
+          <p>Applied 12-factor cloud principles: cache configuration and credentials are fed via Kubernetes ConfigMaps and environment secrets without modifying binaries.</p>
+        </div>
+        <div class="bp-spec-card">
+          <h5><span>🩺</span> Automated SRE Self-Healing</h5>
+          <p>Configured deep readiness and liveness probes checking database connectivity, allowing kubelet to automatically recover failed pods without manual intervention.</p>
         </div>
       </div>
     </div>
-  </dialog>
-
-  <!-- Modal 5: Full Resume Modal -->
+  </dialog>\n\n  <!-- Modal 5: Full Resume Modal -->
   <dialog id="modal-resume" class="arch-modal resume-modal">
     <div class="modal-box large">
       <div class="modal-header">
@@ -1702,6 +2350,6 @@
   <!-- Interactive Toast Notification Element -->
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="app.js?v=2.3"></script>
+  <script src="app.js?v=2.4"></script>
 </body>
 </html>
