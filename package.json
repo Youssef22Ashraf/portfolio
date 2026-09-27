@@ -1,25 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "> A high-performance, dark-mode, interactive engineering portfolio designed specifically for **DevOps & Cloud Infrastructure Engineers**. Built with clean HTML5, modern vanilla CSS3, and ES6 modular JavaScript. Ready for instant deployment on [Vercel](https://vercel.com).",
-  "main": "app.js",
-  "scripts": {
-    "build": "echo \"Static site ready\"",
-    "test": "exit 0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Youssef22Ashraf/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Youssef22Ashraf/portfolio/issues"
-  },
-  "homepage": "https://github.com/Youssef22Ashraf/portfolio#readme",
-  "dependencies": {
-    "@vercel/analytics": "^2.0.1"
-  }
+  "private": true,
+  "description": "DevOps & Cloud Infrastructure Engineer Portfolio - Youssef Ashraf ElNaggar"
 }
