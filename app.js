@@ -559,7 +559,8 @@ function initMobileNav() {
 
   if (!toggle || !drawer) return;
 
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = drawer.classList.contains('open');
     if (isOpen) {
       drawer.classList.remove('open');
@@ -575,6 +576,20 @@ function initMobileNav() {
       drawer.classList.remove('open');
       drawer.setAttribute('aria-hidden', 'true');
     });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (drawer.classList.contains('open') && !drawer.contains(e.target) && !toggle.contains(e.target)) {
+      drawer.classList.remove('open');
+      drawer.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      drawer.classList.remove('open');
+      drawer.setAttribute('aria-hidden', 'true');
+    }
   });
 }
 

@@ -87,12 +87,25 @@ html {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   transition: background-color var(--transition-normal), color var(--transition-normal);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
   position: relative;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
+}
+
+dialog:not([open]) {
+  display: none !important;
+}
+
+img, iframe, canvas {
+  max-width: 100%;
 }
 
 /* Background Particle Canvas */
@@ -131,6 +144,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 /* Header & Glass Nav */
@@ -645,12 +660,9 @@ body {
 
 /* MARQUEE RUNNER STRIP */
 .marquee-strip {
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
@@ -2914,27 +2926,242 @@ section {
   }
 }
 
-@media (max-width: 640px) {
-  .bento-stats-row {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  /* Prevent any horizontal stretch */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 
-  .hero-stats {
-    grid-template-columns: 1fr 1fr;
+  /* Compact, clean mobile header */
+  .nav-container {
+    padding: 0.65rem 0.85rem;
+    gap: 0.5rem;
+  }
+
+  .brand-logo {
+    gap: 0.45rem;
+    flex-shrink: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .logo-box {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    font-size: 0.8rem;
+  }
+
+  .logo-text {
+    font-size: 0.92rem;
+    max-width: 135px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .status-indicator {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    min-height: 7px;
+  }
+
+  .nav-actions {
+    gap: 0.35rem;
+    flex-shrink: 0;
+  }
+
+  /* Crucial: Hide topbar 'Hire Me' button on mobile to prevent navbar width blowout */
+  .nav-actions .nav-btn.primary {
+    display: none !important;
+  }
+
+  .theme-toggle-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .lang-toggle-btn {
+    height: 34px;
+    padding: 0 0.55rem;
+    font-size: 0.78rem;
+  }
+
+  .mobile-toggle {
+    display: flex;
+    padding: 0.35rem;
+  }
+
+  .mobile-drawer {
+    padding: 1rem 1.25rem;
+    gap: 0.85rem;
+  }
+
+  .mobile-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Full screen container safety */
+  .container {
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-section {
+    padding: 2.75rem 0 2rem;
+  }
+
+  .hero-container {
+    gap: 2rem;
+  }
+
+  .badge-wrapper {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .pulse-badge, .gpa-badge, .lang-badge {
+    font-size: 0.74rem;
+    padding: 0.28rem 0.65rem;
+    white-space: normal;
   }
 
   .hero-title {
-    font-size: 2.1rem;
+    font-size: clamp(1.75rem, 6.2vw, 2.2rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
   }
 
   .hero-actions {
     flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
   }
 
   .hero-actions .btn {
     width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1rem;
   }
 
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    padding-top: 1.25rem;
+  }
+
+  .stat-num {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+  }
+
+  /* Grid Layouts to 1 column on phone */
+  .projects-grid,
+  .recs-grid,
+  .certs-grid,
+  .about-grid,
+  .skills-grid,
+  .labs-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .project-card,
+  .rec-card,
+  .skill-card,
+  .about-card,
+  .cert-card {
+    padding: 1.35rem 1.15rem;
+  }
+
+  /* Bento Profile */
+  .bento-profile-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .profile-social-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  .bento-social-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bento-stats-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+  }
+
+  .bento-stat {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .bento-stat .stat-number {
+    font-size: 1.25rem;
+  }
+
+  /* Pipeline Widget */
+  .pipeline-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .pipeline-stages {
+    padding: 1rem 0.85rem;
+    gap: 0.65rem;
+  }
+
+  .pipeline-step {
+    padding: 0.65rem 0.85rem;
+    gap: 0.75rem;
+  }
+
+  .step-info .step-name {
+    font-size: 0.84rem;
+  }
+
+  .step-info .step-meta {
+    font-size: 0.7rem;
+  }
+
+  .pipeline-footer {
+    padding: 0.65rem 0.85rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .pipeline-log-ticker {
+    max-width: 100%;
+    font-size: 0.72rem;
+    white-space: normal;
+  }
+
+  /* Timeline */
   .timeline {
     padding-left: 1.25rem;
   }
@@ -2948,6 +3175,46 @@ section {
     gap: 0.35rem;
   }
 
+  /* Terminal Window */
+  .terminal-topbar {
+    padding: 0.6rem 0.85rem;
+  }
+
+  .terminal-body {
+    padding: 1rem 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  .terminal-quick-pills {
+    padding: 0.65rem 0.85rem;
+    gap: 0.35rem;
+  }
+
+  .pill-btn, .pill-cmd {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  /* Contact Card */
+  .contact-card {
+    padding: 2rem 1.15rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .channel-card {
+    padding: 1rem 0.85rem;
+    gap: 0.85rem;
+  }
+
+  .channel-value {
+    font-size: 0.92rem;
+    word-break: break-all;
+  }
+
   .social-links-row {
     flex-direction: column;
     width: 100%;
@@ -2958,6 +3225,72 @@ section {
     justify-content: center;
   }
 
+  /* Footer */
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.65rem;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .footer-sep {
+    display: none;
+  }
+
+  /* Dialogs and Blueprint Modals */
+  .arch-modal {
+    padding: 0.5rem;
+    width: 96vw;
+    max-width: 100%;
+  }
+
+  .modal-box {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-lg);
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-box.blueprint-box {
+    padding: 1.15rem 0.75rem;
+  }
+
+  .modal-title {
+    font-size: 1.15rem;
+  }
+
+  .bp-canvas-container {
+    padding: 1rem 0.65rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bp-topology-grid {
+    min-width: 720px;
+  }
+
+  .bp-telemetry-header {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .pdf-viewer-wrap {
+    min-height: 380px;
+    height: 55vh;
+  }
+
   .arch-diagram {
     flex-direction: column;
   }
@@ -2965,6 +3298,34 @@ section {
   .arch-arrow {
     transform: rotate(90deg);
     margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo-text {
+    max-width: 105px;
+    font-size: 0.85rem;
+  }
+
+  .nav-container {
+    padding: 0.55rem 0.65rem;
+  }
+
+  .pulse-badge, .gpa-badge, .lang-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.55rem;
+  }
+
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .stat-num {
+    font-size: 1.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.68rem;
   }
 }
 
