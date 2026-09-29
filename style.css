@@ -2627,53 +2627,194 @@ section {
   color: var(--accent-cyan);
 }
 
-/* Resume Document (Modal & Print) */
+/* Resume Document (Modal & Print) - Redesigned for Desktop & Mobile UX */
+.resume-modal {
+  width: 92vw;
+  max-width: 950px;
+}
+
+.resume-modal .modal-box {
+  padding: 1.75rem 2rem;
+  background: #080d16;
+  background-image: 
+    radial-gradient(rgba(0, 242, 254, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 22, 35, 0.98), rgba(8, 13, 22, 0.99));
+  background-size: 24px 24px, 100% 100%;
+}
+
+.resume-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.resume-modal-header .modal-title-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.resume-modal-header .modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0.2rem;
+  line-height: 1.3;
+}
+
+/* Quick Actions Toolbar */
+.resume-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.15rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.resume-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.15rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.resume-action-btn.primary {
+  background: rgba(0, 242, 254, 0.15);
+  border-color: rgba(0, 242, 254, 0.45);
+  color: var(--accent-cyan);
+  box-shadow: 0 0 16px rgba(0, 242, 254, 0.12);
+}
+
+.resume-action-btn.primary:hover {
+  background: var(--accent-cyan);
+  color: #030712;
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+.resume-action-btn.secondary {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.resume-action-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: var(--accent-blue);
+  transform: translateY(-1px);
+}
+
+.resume-action-btn.print-btn {
+  background: transparent;
+  border-color: var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.resume-action-btn.print-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+/* Tabs */
 .resume-tabs-nav {
   display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1.25rem;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.15rem;
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.65rem;
 }
 
 .resume-tab-btn {
-  background: transparent;
-  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
   font-weight: 600;
-  padding: 0.45rem 1rem;
-  border-radius: var(--radius-sm);
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-md);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: center;
+  gap: 0.5rem;
   transition: all var(--transition-fast);
 }
 
 .resume-tab-btn:hover {
   color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .resume-tab-btn.active {
   background: rgba(0, 242, 254, 0.12);
-  border-color: rgba(0, 242, 254, 0.35);
+  border-color: var(--accent-cyan);
   color: var(--accent-cyan);
   font-weight: 700;
+  box-shadow: 0 0 14px rgba(0, 242, 254, 0.18);
+}
+
+.tab-badge-rec {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(0, 242, 254, 0.18);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.4);
+}
+
+.mobile-pdf-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.85rem 1rem;
+  background: rgba(0, 242, 254, 0.06);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.85rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.mobile-pdf-notice a {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .resume-body {
   max-height: 75vh;
   overflow-y: auto;
-  padding-right: 0.5rem;
+  padding-right: 0.4rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 242, 254, 0.3) transparent;
 }
 
 .pdf-viewer-wrap {
   width: 100%;
   height: 68vh;
-  min-height: 520px;
+  min-height: 500px;
   background: #111827;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
@@ -2717,22 +2858,13 @@ section {
   color: var(--border-subtle);
 }
 
-.mini-btn.highlight-btn {
-  background: rgba(0, 242, 254, 0.15);
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
-}
-
-.mini-btn.highlight-btn:hover {
-  background: var(--accent-cyan);
-  color: #030712;
-}
-
+/* ATS Web Document */
 .resume-doc {
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 2rem;
+  color: var(--text-primary);
 }
 
 .res-head {
@@ -2745,25 +2877,51 @@ section {
 .res-head h2 {
   font-size: 1.8rem;
   font-weight: 800;
+  color: #ffffff;
 }
 
 .res-sub {
   font-size: 1.05rem;
   color: var(--accent-cyan);
   font-weight: 600;
-  margin: 0.25rem 0 0.5rem;
+  margin: 0.35rem 0 0.6rem;
 }
 
 .res-contacts {
   font-size: 0.88rem;
   color: var(--text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem 0.6rem;
+}
+
+.res-contact-chip {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.res-contact-chip:hover {
+  color: var(--accent-cyan);
+}
+
+.res-link-chip {
+  color: var(--accent-cyan);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.res-chip-sep {
+  color: var(--border-subtle);
 }
 
 .res-avail {
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--accent-emerald);
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 .res-sec {
@@ -2771,7 +2929,7 @@ section {
 }
 
 .res-sec h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--accent-blue);
   border-bottom: 1px solid var(--border-subtle);
@@ -2782,22 +2940,37 @@ section {
 }
 
 .res-item {
-  margin-bottom: 1rem;
+  margin-bottom: 1.15rem;
 }
 
 .res-row {
   display: flex;
   justify-content: space-between;
   font-size: 0.92rem;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
   gap: 1rem;
 }
 
-.res-item ul {
-  padding-left: 1.2rem;
-  color: var(--text-secondary);
+.res-row strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.res-date {
   font-size: 0.85rem;
-  line-height: 1.5;
+  color: var(--accent-cyan);
+  white-space: nowrap;
+}
+
+.res-item ul {
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.res-item ul li {
+  margin-bottom: 0.35rem;
 }
 
 /* Toast */
@@ -3291,9 +3464,187 @@ section {
     gap: 0.4rem;
   }
 
+  /* Resume Modal Mobile UX Optimization */
+  .resume-modal {
+    padding: 0.35rem !important;
+    width: 98vw !important;
+    max-width: 100% !important;
+    margin: auto !important;
+  }
+
+  .resume-modal .modal-box {
+    padding: 1.1rem 0.85rem !important;
+    border-radius: var(--radius-lg) !important;
+    max-height: 94vh !important;
+  }
+
+  .resume-modal-header {
+    margin-bottom: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    gap: 0.75rem !important;
+  }
+
+  .resume-modal-header .modal-title {
+    font-size: 1.12rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .resume-modal-header .close-modal-btn {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.5rem !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+  }
+
+  .resume-toolbar {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+    padding: 0.55rem !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  .resume-action-btn {
+    width: 100% !important;
+    padding: 0.55rem 0.35rem !important;
+    font-size: 0.78rem !important;
+    gap: 0.35rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .resume-action-btn.print-btn {
+    display: none !important;
+  }
+
+  .resume-tabs-nav {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.4rem !important;
+    padding-bottom: 0.6rem !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  .resume-tab-btn {
+    width: 100% !important;
+    padding: 0.5rem 0.35rem !important;
+    font-size: 0.78rem !important;
+    flex-direction: column !important;
+    gap: 0.2rem !important;
+    text-align: center !important;
+  }
+
+  .resume-tab-btn span {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .tab-badge-rec {
+    font-size: 0.62rem !important;
+    padding: 0.1rem 0.35rem !important;
+  }
+
+  .mobile-pdf-notice {
+    padding: 0.65rem 0.75rem !important;
+    font-size: 0.78rem !important;
+    margin-bottom: 0.65rem !important;
+  }
+
   .pdf-viewer-wrap {
-    min-height: 380px;
-    height: 55vh;
+    min-height: 340px !important;
+    height: 52vh !important;
+    -webkit-overflow-scrolling: touch !important;
+    overflow: auto !important;
+    touch-action: pan-y pinch-zoom !important;
+  }
+
+  .pdf-fallback-bar {
+    flex-direction: column !important;
+    gap: 0.4rem !important;
+    text-align: center !important;
+    padding: 0.65rem 0.5rem !important;
+  }
+
+  .pdf-fallback-bar .sep {
+    display: none !important;
+  }
+
+  .resume-doc {
+    padding: 1.1rem 0.75rem !important;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .res-head {
+    padding-bottom: 1rem !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  .res-head h2 {
+    font-size: 1.35rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .res-sub {
+    font-size: 0.9rem !important;
+    margin: 0.25rem 0 0.4rem !important;
+  }
+
+  .res-contacts {
+    font-size: 0.78rem !important;
+    line-height: 1.5 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.3rem 0.5rem !important;
+  }
+
+  .res-avail {
+    font-size: 0.76rem !important;
+    margin-top: 0.4rem !important;
+  }
+
+  .res-sec {
+    margin-bottom: 1.15rem !important;
+  }
+
+  .res-sec h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .res-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.15rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  .res-row strong {
+    font-size: 0.9rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .res-date {
+    font-size: 0.78rem !important;
+    color: var(--accent-cyan) !important;
+    white-space: normal !important;
+  }
+
+  .res-item ul {
+    padding-left: 1.1rem !important;
+    font-size: 0.82rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .res-item ul li {
+    margin-bottom: 0.35rem !important;
   }
 
   .arch-diagram {

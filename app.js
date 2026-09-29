@@ -291,7 +291,7 @@ c991823d14e0   proctor-node-app   0.85%     44.6MiB / 2.00GiB     2.18%     65MB
   ★ 80% decrease in repository sync errors via Ansible playbooks & Nexus
   ★ 3.95 / 4.00 Cumulative GPA (Graduated with Highest Honors from Nile University)`,
 
-    'open resume': () => { window.open('Youssef-Ashraf-Resume.pdf?v=2.6', '_blank'); return '✓ Opened official resume PDF in a new browser tab.'; },
+    'open resume': () => { window.open('Youssef-Ashraf-Resume.pdf?v=2.7', '_blank'); return '✓ Opened official resume PDF in a new browser tab.'; },
     'cat resume.txt': `========================================================================
 YOUSSEF ASHRAF ELNAGGAR | DEVOPS & CLOUD INFRASTRUCTURE ENGINEER
 ========================================================================
@@ -403,6 +403,11 @@ function initModals() {
     const resumeModal = document.getElementById('modal-resume');
     if (resumeModal && typeof resumeModal.showModal === 'function') {
       resumeModal.showModal();
+      // On mobile screens, activate Interactive Web View for optimal readability
+      if (window.innerWidth <= 768) {
+        const tabText = document.getElementById('tab-btn-text');
+        if (tabText) tabText.click();
+      }
     }
   }
 
